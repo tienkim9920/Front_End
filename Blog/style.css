@@ -1,0 +1,766 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------Header--------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-image: url(/img/Banner2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.ul-navigation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.li-navigation{
+    list-style: none;
+    padding: 1.4rem 1.5rem;
+}
+
+.item-navigation{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sticky{
+    background-color: #ffffff;
+    transition: all .8s;
+}
+
+.colorSticky{
+    color: black;
+    transition: all 1s;
+}
+
+.h1-Header{
+    font-size: 6rem;
+    color: #ffffff;
+    text-align: center;
+    animation-name: moveRight;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.txt-Header{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    color: rgb(202, 202, 202); 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    animation-name: moveLeft;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+}
+
+i{
+    color: #ffffff;
+}
+
+.fab{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.fab:hover{
+    color: rgb(73, 191, 196);
+    transition: all .5s;
+    transform: scale(1.1)
+}
+
+.Font-Icon{
+    text-align: center;
+    animation-name: moveUp;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveRight{
+    0%{
+        transform: translateX(-3rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(3rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+/* -------------------------------------------Header--------------------------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------------About Me------------------------------------------------ */
+
+.aboutMe{
+    background-color: #2B2B2B;
+    width: 100%;
+    height: 32rem;
+}
+
+.groupImg{
+    display: flex;
+    justify-content: flex-end;
+    animation-name: moveRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.groupImg img{
+    margin-top: 6rem;
+    margin-right: 6rem;
+    border-radius: 50%;
+}
+
+.groupGrid{
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+}
+
+.aboutContent{
+    width: 75%;
+    animation-name: moveLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.abountDetail{
+    margin-top: 6rem;
+}
+
+.abountDetail h1{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.abountDetail p {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    word-spacing: .1rem;
+}
+
+.contactDetail{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.downResume{
+    margin-top: 3rem;
+}
+
+.downResume a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1.2rem 1.3rem;
+    color: #ffffff;
+    background-color: rgb(70, 70, 70);
+    font-weight: bold;
+}
+
+.downResume a:hover{
+    color: black;
+    background-color: #ffffff;
+    transition: all .5s;
+}
+
+.downResume a:hover i{
+    color: black;
+    transition: all .5s;
+}
+
+.downResume i {
+    padding: 0 1rem;
+}
+
+.contact h1{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.contact p{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    word-spacing: .1rem;
+}
+
+#header:link{
+    transition: all 2s;
+}
+
+/* -------------------------------------------About Me------------------------------------------------ */
+
+
+
+
+
+/* -------------------------------------------Resume-------------------------------------------------- */
+
+.fixGridResume{
+    padding: 4rem 0;
+}
+
+.Resume{
+    height: 115rem;
+    width: 100%;
+}
+
+.ResumeContent{
+    width: 80%;
+}
+
+.ResumeDetail{
+    padding-top: 4rem;
+}
+
+.ResumeDetail h1 {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.ResumeDetail i {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.ResumeDetail li{
+    padding-left: 1rem;
+    color: rgb(92, 92, 92);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.groupResume{
+    text-align: center;
+    padding-top: 7rem;
+    padding-left: 2rem;
+}
+
+.txtResume{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    border-bottom: 3.5px solid #11ABB0;
+}
+
+.inline{ 
+    display: inline;
+
+}
+
+hr{
+    width: 67%;
+    border: 0.1px solid rgb(223, 223, 223);
+}
+
+.Skill{
+    width: 80%;
+}
+
+.wapperLevelSkill{
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 2.6rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.LevelSkill{
+    background-color: rgb(3, 243, 83);
+    height: 2.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wapperLevelSkill:hover .LevelSkill{
+    filter: brightness(95%);
+}
+
+.colorActive{
+    color: rgb(0, 200, 235);
+}
+
+.nameSkill{
+    color: royalblue;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wapperLevelSkill .phanTram{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.phanTram p{
+    position: absolute;
+    left: 46%;
+    top: -0.3rem;
+    z-index: 999;
+    opacity: 0;
+    visibility: visible;
+    color: #ffffff;
+}
+
+.wapperLevelSkill:hover .phanTram p{
+    opacity: 1;
+    transition: all .5s;
+}
+
+/* -------------------------------------------Resume-------------------------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------------Works-------------------------------------------------- */
+
+.works{
+    width: 100%;
+    height: 177rem;
+    background-color: #EBEEEE;
+}
+
+.works p {
+    letter-spacing: .05rem;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    font-style: italic;
+    padding: 4rem 0;
+}
+
+.gridWorks{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* .gridWorks .Video{
+    padding-left: 3rem;
+} */
+
+/* -------------------------------------------Works-------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------Testimonials-------------------------------------------------- */
+
+.testimonials{
+    background-image: url(/img/Banner3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 30rem;
+}
+
+.testimonials-Left{
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.testimonials-Right{
+    padding: 3rem 0;
+}
+
+.testimonials-Right h1{
+    font-size: 1.8rem;
+    color: #ffffff;
+    width: 60%;
+    padding: 2rem 0;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------------------------------------------Testimonials-------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------Contact-------------------------------------------------- */
+
+.contactMe{
+    width: 100%;
+    height: 14rem;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gridContactMe{
+    padding: 2rem 0;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.gridContactMe span{
+    text-align: center;
+    padding: 2rem 0;
+    color: #646464;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fab{
+    padding: 0 2.2rem;
+}
+
+.redirect-Top{
+    position: absolute;
+    top: -1.5rem;
+}
+
+.fa-angle-up{
+    text-decoration: none;
+    color: #ffffff;
+    padding: .8rem 1.2rem;
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+}
+
+.fa-angle-up:hover{
+    background-color: rgb(97, 158, 160);
+    transition: all .5s;
+}
+
+.container-navbar{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:515px) { 
+
+    .container-navbar{
+        display: block;
+    }
+
+    .navigation{
+        display: none;
+    }
+    
+    .nav-checkbox{
+        display: none;
+    }
+    
+    .nav-close{
+        cursor: pointer;
+        position: fixed;
+        top: 0.2rem;
+        left: 0;
+        z-index: 9999;
+        background-color: rgb(13, 101, 216);
+        color: #ffffff;
+        padding: 0.5rem 0.7rem;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .nav-open{
+        cursor: pointer;
+        position: fixed;
+        top: 0.2rem;
+        left: 0;
+        z-index: 9999;
+        background-color: rgb(13, 101, 216);
+        color: #ffffff;
+        padding: 0.5rem 0.5rem;
+        transition: all 0.5s;
+    }
+    
+    .nav-checkbox:checked ~ .lb-icon .icon-front{
+        transform: rotateY(-180deg);
+    }
+    
+    .nav-checkbox:checked ~ .lb-icon .icon-back{
+        transform: rotateY(0);
+        opacity: 1;
+    }
+    
+    .icon-back{
+        transform: rotateY(180deg);
+    }
+    
+    .nav-background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+        background-image: linear-gradient(rgba(199, 199, 199, 0.4), rgba(201, 200, 200, 0.4));
+        opacity: 0;
+        transition: 0.5s;
+        visibility: hidden;
+    }
+    
+    .nav-checkbox:checked ~ .nav-background{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .group-nav{
+        background-color: rgb(57, 132, 231);
+        position: fixed;
+        top: 4rem;
+        left: 0%;
+        z-index: 9999;
+        width: 60%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .nav-list{
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: -7%;
+    }
+    
+    .navi-link{
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .navi-link{
+        z-index: 1;
+        position: relative;
+        padding: 1rem 2.5rem;
+    }
+      
+    .navi-link:hover{
+        cursor: pointer;
+        color: #00e9ca;
+        border-bottom: 3px solid rgb(145, 240, 243);
+    }
+
+    .nav-item{
+        width: 15rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .group-nav{
+        opacity: 1;
+        visibility: hidden;
+        transform: translateX(-15rem);
+        transition: 0.5s;
+    }
+
+    .nav-checkbox:checked ~ .group-nav{
+        transform: translateX(0rem);
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .h1-Header{
+        font-size: 4rem;
+        animation-name: none;
+    }
+
+    .txt-Header{
+        font-size: 1.3rem;
+        padding: 0 2rem;
+        animation-name: none;
+    }
+
+    .Font-Icon{
+        animation-name: none;
+    }
+
+    .aboutMe{
+        height: 40rem;
+    }
+
+    .groupImg{
+        display: none;
+    }
+
+    .groupGrid{
+        grid-template-columns: auto;
+    }
+
+    .aboutContent{
+        text-align: center;
+        width: 100%;
+        animation-name: none;
+    }
+
+    .abountDetail p{
+        padding: 0 2rem;
+    }
+
+    .contactDetail{
+        grid-template-columns: auto;
+    }
+
+    .groupResume{
+        padding-left: 0rem;
+        padding-top: 4rem;
+    }
+
+    .ResumeContent{
+        width: 100%;
+    }
+
+    .ResumeDetail{
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 4rem;
+    }
+
+    .ResumeDetail h1 {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .ResumeDetail i {
+        text-align: center;
+    }
+
+    .ResumeDetail li {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .Skill {
+        padding: 0 2rem;
+    }
+
+    .Resume {
+        height: 135rem;
+    }
+
+    iframe{
+        width: 320px;
+        height: 200px;
+    }
+    
+    .fixResume{
+        padding-top: 0rem;
+    }
+
+    .gridWorks .Video {
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .testimonials-Left{
+        display: none;
+    }
+
+    .testimonials-Right{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .testimonials-Right h1 {
+        width: 83%;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    .testimonials {
+        height: 20rem;
+    }
+
+    .fab{
+        padding: 0px 1rem;
+    }
+
+    .works{
+        height: 142rem;
+    }
+    
+    .nav-list{
+        left: -25%;
+    }
+
+    .navi-link {
+        padding: 1rem 1.5rem;
+        font-size: .9rem;
+    }
+
+    .nav-background{
+        display: none;
+    }
+
+    
+    .fixGridResume{
+    padding: 2rem 0;
+    }
+
+}
