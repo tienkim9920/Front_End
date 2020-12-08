@@ -1,0 +1,283 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif !important;
+}
+
+/*------------------HEADER----------------*/
+.banner{
+    padding-top: 100px;
+    position: relative;
+    animation: moveLeft;
+    animation-duration: 0.3s; 
+}
+@keyframes moveLeft {
+    0%{
+      opacity: 0.5;
+      transform: translateX(-10px); 
+      }
+    100%{
+      transform: translateX(0);
+      opacity: 1; 
+      } 
+  }
+
+header .dot{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    position: relative;
+    top: -18px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    animation: fade;
+}
+.dot:hover{
+    background-color:rgb(138, 138, 92) !important;
+}
+.pre,.next{
+    font-size: 40px;
+    position: absolute;
+    top: 350px;
+    margin-top: -150px;
+    cursor: pointer;
+    color:rgb(235, 235, 224);
+    padding-left: 5px;
+    display: inline-block;
+    transition: 0.3s linear;
+    animation: fade;
+}
+.pre{
+    margin-left: 1%;
+}
+.next{
+    margin-left: 95%;
+}
+.pre:hover,.next:hover{
+    color: green;
+    opacity: 1;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+header ul{
+    display: flex;
+    margin: 20px 0px;
+    list-style: none;
+    padding-left: 45%;
+}
+header ul .active::before{
+    content: "/";
+    padding: 0 10px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.active a{
+    color: black;
+}
+header a:hover{
+    color: red;
+}
+
+/*------------------ABOUT-SECTION----------------*/
+section .wrapper{
+    border-top: 1px solid black;
+    margin: 30px auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+.grid-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    grid-column-gap: 2em;
+    grid-row-gap: 3em ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.grid-content{
+    background-color:white;
+    border-radius: 10px;
+    display: block; 
+    transition: 0.5s linear;
+    padding-bottom: 20px;
+}
+.grid-content a {
+    color: inherit;
+    text-decoration: none;
+}
+.grid-content img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.grid-content:hover{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey,-1px 1px 10px grey;
+    color:green
+}
+.list_meta {
+    color: #9B9B9B;
+    border-bottom: 1px solid #979797;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 13px;
+}
+.list_meta span .fa {
+    padding-left:15px;
+    font-size: 15px;
+}
+
+.list_title {
+    position: relative;
+    font-size: 16px;
+    display: block;
+    font-weight: 300;
+    padding: 0 10px;
+}
+.sub-section{
+    text-align: center;
+    display: block;
+}
+section .sub-section a{
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s ease-in;
+}
+section .sub-section a:hover{
+    background-color: #0C713D;
+    color: whitesmoke;
+}
+
+@media screen and (max-width:1150px){
+
+    .banner{
+        padding-top: 100px;
+    }
+    .next{
+        margin-left: 94%;
+    }
+ }
+
+@media screen and (max-width: 900px){
+    .container-navbar{
+        display: block;
+    }
+
+    .header-tab{
+        background-color: #0C713D;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-tab .group-AddCart{
+        display: none;
+    }
+
+    .header .header-tab{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .pre,.next{
+        font-size: 35px;
+        top: 300px;
+
+    }
+    .banner{
+        padding-top: 60px;
+
+    }
+    .next{
+        margin-left: 92%;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        grid-column-gap: 3em;
+        grid-row-gap: 3em;
+        margin-left: 20px;
+    }
+    section .wrapper{
+        width: 100%;
+
+    }
+    
+
+}
+
+ @media screen and (max-width:650px){
+
+    .container-navbar{
+        display: block;
+    }
+
+    .pre,.next{
+        font-size: 25px;
+        top: 250px;
+    }
+    .next{
+        margin-left: 94%;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        grid-row-gap: 5em;
+        padding-left: 20%;
+    }
+    header ul{
+        transform: translateX(-10%);
+    }
+ }
+ @media screen and (max-width:600px){
+    .container-navbar{
+        display: block;
+    }
+    .next{
+        margin-left: 90%;
+    }
+}
+@media screen and (max-width:450px){
+    .grid-container{
+        grid-template-columns: repeat(1,350px);
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:375px){
+    .grid-container{
+        grid-template-columns: repeat(1,300px);
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+  

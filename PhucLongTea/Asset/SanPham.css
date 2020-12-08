@@ -1,0 +1,168 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif !important;
+}
+
+/*------------------HEADER----------------*/
+header ul{
+    display: flex;
+    margin: 20px 0px;
+    list-style: none;
+    padding-left: 45%;
+}
+header ul .active::before{
+    content: "/";
+    padding: 0 10px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.active a{
+    color: black;
+}
+header a:hover{
+    color: red;
+}
+
+/*------------------ABOUT-SECTION----------------*/
+section .wrapper{
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+.banner{
+    padding-top: 100px;
+    position: relative;
+
+}
+
+ 
+.directIcon i{
+    color: rgb(119, 119, 119);
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 38%;
+    z-index: 2;
+}
+
+.directIcon{
+    margin: 50px auto;
+    border-bottom: 1.2px solid black;
+    width: 18rem;
+    position: relative;
+}
+.title-content{
+    font-size: 40px;
+    color: green;
+    margin-left: 10px;
+}
+
+.option-title{
+    margin-bottom: 30px;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 0px 30px;
+    color: #797979; 
+}
+.option-title:hover{
+    background-color: whitesmoke;
+    color: green;
+}
+.content-left{
+    float: left;
+    background-image: url(/img/backgroundImgCoffee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    left: 30px;
+
+}
+.content-left img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184), -5px 5px 5px rgb(214, 213, 213), 5px -5px 5px rgb(223, 223, 223);
+    position: relative;
+    top: 40px;
+    left: 100px;
+    background-color: white;
+}
+.content-right{
+    float: right;
+    background-image: url(/img/backgroundImgCoffee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    right: 30px;
+}
+.content-right img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184), -5px 5px 5px rgb(214, 213, 213), 5px -5px 5px rgb(223, 223, 223);
+    position: relative;
+    top: 40px;
+    left: 100px;
+    background-color: white;
+}
+.right{
+    width: 45%;
+    margin-left: 600px;
+}
+.left{
+    width: 45%;
+    margin-left: 100px;
+
+}
+.right h1,.left h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.clear-left{
+    clear: both;
+}
+.sub-content{
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.content-tra,.content-caphe,.content-banh,.content-qua{
+    padding-bottom: 200px;
+    padding-top: 50px;
+    animation: fadein;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out; 
+}
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.chitiet{
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: white;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    padding: 10px;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+}
+.chitiet:hover{
+    background-color: #0C713D;
+    color: whitesmoke;
+}
+

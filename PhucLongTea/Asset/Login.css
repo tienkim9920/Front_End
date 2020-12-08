@@ -1,0 +1,171 @@
+
+.group-Login{
+    background-color: rgb(245, 245, 245);
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 11rem;
+}
+
+.wrapper-Login{
+    width: 75%;
+    height: 50rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(224, 224, 224), -2px 2px 2px rgb(224, 224, 224), 2px -2px 2px rgb(224, 224, 224);
+}
+
+.center-Login h1{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #0C713D;
+    font-family: monospace;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.form-Group{
+    padding: .8rem 3rem;
+
+}
+
+.form-Group label{
+    color: rgb(77, 77, 77);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.form-Group input{
+    width: 90%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid rgb(221, 221, 221);
+}
+
+.form-Group input:focus{
+    border-bottom: 1.5px solid gray;
+}   
+
+h4{
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: 300;
+    padding: .8rem 3rem;
+}
+
+i{
+    color: #0C713D;
+    cursor: pointer;
+}
+
+.btn-Login{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-Login a{
+    cursor: pointer;
+    padding: .9rem 1.6rem;
+    background-color: #0e7c43;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-Login a:hover{
+    background-color: #0C713D;
+}
+
+.btn-SignIn-SignUp{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.Sign-Login{
+    cursor: pointer;
+    padding: .9rem 2.2rem;
+    color: #0e7c43;
+    border-radius: 10px;
+    border: 1px solid #0e7c43;
+    cursor: pointer;
+}
+
+.kiemTraLoi{
+    margin-top: .2rem;
+    height: 1.2rem;
+}
+
+.kiemTraLoi span{
+    color: red;
+}
+
+.Section-Login{
+    animation-name: fadeIn;
+    animation-duration: .9s;
+    animation-timing-function: ease-in-out; 
+}
+
+.modal{
+    position: fixed;
+    background-color: rgb(233, 233, 233, .2);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: all .7s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wapper-modal{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    width: 35%;
+    position: absolute;
+    top: 13rem;
+    left: 29%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(224, 224, 224, .3), -3px 3px 3px rgb(224, 224, 224, .3), 3px -3px 3px rgb(224, 224, 224, .3);
+}
+
+.group-modal h3{
+    font-size: 1.6rem;
+    color: #0C713D;
+}
+
+.group-modal p{
+    font-size: 1.2rem;
+}
+
+.btn-modal{
+    padding: 1.5rem 0;
+    padding-bottom: 2rem;
+}
+
+.btn-modal a{
+    text-decoration: none;
+    background-color: #0C713D;
+    color: #ffffff;
+    padding: .8rem 1.2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}

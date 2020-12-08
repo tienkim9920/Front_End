@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="./Asset/HotLine.css">
+<div class='quick-call-button'></div>
+<div class='call-now-button' id='draggable'>
+    <div>
+        <p class='call-text'> <b>Hotline: 076.3557.366</b> </p>
+        <a href='tel:0763557366' id='quickcallbutton' title=' Call Now'>
+            <div class='quick-alo-ph-circle active'></div>
+            <div class='quick-alo-ph-circle-fill active'></div>
+            <div class='quick-alo-ph-img-circle shake'></div>
+        </a>
+    </div>
+</div>
+<style>
+    @media screen and (max-width: 1600px) {
+        .call-now-button {
+            display: flex !important;
+            background: #1a1919;
+        }
+
+        .quick-call-button {
+            display: block !important;
+        }
+    }
+
+    @media screen and (min-width: px) {
+        .call-now-button .call-text {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: px) {
+        .call-now-button .call-text {
+            display: none !important;
+        }
+    }
+
+    .call-now-button {
+        top: 80%;
+    }
+
+    .call-now-button {
+        left: 5%;
+    }
+
+    .call-now-button {
+        background: #1a1919;
+    }
+
+    .call-now-button div a .quick-alo-ph-img-circle,
+    .call-now-button div a .quick-alo-phone-img-circle {
+        background-color: #0c3;
+    }
+
+    .call-now-button .call-text {
+        color: #fff;
+    }
+</style>

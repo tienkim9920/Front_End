@@ -1,0 +1,241 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif !important;
+}
+
+/*------------------HEADER----------------*/
+header ul{
+    display: flex;
+    margin: 20px 0px;
+    list-style: none;
+    padding-left: 45%;
+}
+header ul .active::before{
+    content: "/";
+    padding: 0 10px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.active a{
+    color: black;
+}
+header a:hover{
+    color: red;
+}
+.banner{
+    padding-top: 100px;
+    position: relative;
+
+}
+
+/*------------------ABOUT-SECTION----------------*/
+header .button{
+    margin-top: 50px;
+    display: flex;
+}
+header .button-left,.button-right{
+    width: 50%;
+   border: 1px solid #ccc;
+   text-align: center;
+   padding: 20px 0px 10px;
+   
+}
+.button select{
+    border-radius: 5px;
+    padding: 10px 100px 10px 10px;
+    border: 1px solid green;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.5s ease-in-out;
+}
+.button input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    border: 1px solid green;
+    width: 400px;
+}
+.button i{
+    margin-left: -5px;
+    padding: 8px 10px 11px 10px;;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid green;
+    color: green;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.button  label{
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.button input:focus{
+    outline: none;
+    border: 1px solid green;
+}
+.button i:hover{
+    background-color: #0C713D;
+    color: white;
+}
+.button select:hover{
+    color: black;
+}
+.about-promotion .wrapper{
+    margin-top: -20px;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+}
+.wrapper .grid-container{
+    margin: 0 auto;
+    display: grid;
+    max-width: 1170px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    padding-bottom: 50px;
+}
+.product{
+    background-color: white;
+}
+.product-img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product img{
+    width: 180px;
+    height: 180px;
+}
+.product-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #010101;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.product-desc{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-price{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0C713D;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.product-button{
+    text-align: center;
+}
+.product-button input{
+    font-size: 18px;
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.product-button input:hover{
+    background-color: #0C713D;
+    color: whitesmoke;
+}
+
+#countStore{
+    background-color: #0C713D;
+    color: #ffffff;
+    padding: .17rem .35rem;
+    border-radius: 50%;
+}
+.show-SanPham img{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    float: left;
+}
+#showSanPham{
+    width: 25rem;
+    height: 11rem;
+    overflow: auto;
+}
+
+.show-SanPham{
+    padding-top: 10px;
+    padding-left: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.show-SanPham h4{
+    font-size: 1.1rem;
+    color: #0C713D;
+    text-align: center;
+    width: 300px;
+    text-transform: capitalize;
+}
+.show-SanPham .buy-price{
+    font-weight: bold;
+    color: gray;
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+.show-SanPham input{
+    padding-left: 45px;
+    float: left;
+    font-weight: bold;
+    color: gray;
+    font-size: 1rem;
+    width: 1.1rem;
+    background-color: white;
+    border: none;
+    margin-right: -5px;
+    margin-top: -8px;
+}
+
+.show-SanPham a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 2rem;
+    float: right;
+    margin-top: -110px;
+}
+
+.show-SanPham a:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+#Slide .dot{
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-left: 5px;
+}
+#Slide i{
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    padding: .5rem .8rem .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-left: 5px;
+}
+#Slide i:hover,#Slide .dot:hover{
+    color: #ffffff;
+    background-color: #0C713D;
+}
+
+

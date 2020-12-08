@@ -1,0 +1,176 @@
+
+.container-section-detail{
+    width: 1080px;
+    margin: auto;
+}
+
+.wrapper-detail{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    position: relative;
+    perspective: 150rem;
+    height: 25rem;
+    width: 85%;
+}
+
+.card-side{
+    height: 25rem;
+    transition: all 0.9s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 1rem 2rem rgb(98, 98, 98);
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card-front{
+    background-color: #f0f0f0;
+}
+
+.card:hover .card-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back{
+    transform: rotateY(0);
+}
+
+.card-heading{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    font-weight: 500;
+    width: 75%;
+    color: #ffffff;
+}
+
+.span-Down{
+    width: 50%;
+    margin: auto;
+    padding: 0.3rem 1rem;
+    border-radius: 4rem;
+}
+
+.span-Up{
+    padding: 0.3rem 0.5rem;
+    border-radius: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.fix-Up{
+    width: 50%;
+    margin: auto;
+    padding: 0.3rem 1rem;
+    border-radius: 4rem;
+}
+
+.fix-Down{
+    padding: 0.3rem 0.5rem;
+    border-radius: 4rem;
+    text-align: center;
+    width: 65%;
+}
+
+.fix-Down2{
+    width: 45%;
+}
+
+.heading-span--1{
+    background-image: linear-gradient(to right, #A5C736, rgb(200, 241, 64));
+}
+
+.heading-span--2{
+    background-image: linear-gradient(to right, #37A5E2, rgb(114, 193, 236));
+}
+
+.heading-span--3{
+    background-image: linear-gradient(to right, #1C778A, rgb(78, 170, 189));
+}
+
+.picture-heading{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 23vh;
+    clip-path: ellipse(67% 77% at 51% 22%);
+}
+
+.picture-1{
+    background-image: linear-gradient(-90deg, rgb(75, 75, 75, 0.5), rgb(136, 136, 136, 0.5)), url(/img/detail1.jpg);
+}
+
+.picture-2{
+    background-image: linear-gradient(-90deg, rgba(194, 191, 191, 0.5), rgba(167, 167, 167, 0.5)), url(/img/detail2.jpg);
+}
+
+.picture-3{
+    background-image: linear-gradient(-90deg, rgba(194, 191, 191, 0.5), rgba(167, 167, 167, 0.5)), url(/img/detail3.jpg);
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.7rem 0rem;
+    color: rgb(100, 100, 100);
+}
+
+.front-body{
+    text-align: center;
+    transform: translateY(2rem);
+}
+
+.li-front:not(:last-child){
+    border-bottom: 1px solid rgb(158, 158, 158);
+    width: 50%;
+    margin: auto;
+}
+
+.card-back{
+    text-align: center;
+    color: #ffffff;
+}
+
+.back-heading{
+    font-size: 1.6rem;
+    font-weight: -100;
+}
+
+.back-body{
+    font-weight: 100;
+}
+
+.card-back-ground{
+    transform: translateY(2.5rem);
+}
+
+.card-back--color1{
+    background-image: linear-gradient(to right, rgba(152, 197, 2, 0.8), rgb(200, 241, 64, 0.8));
+}
+
+.card-back--color2{
+    background-image: linear-gradient(to right, rgba(11, 147, 221, 0.8), rgb(114, 193, 236, 0.8));
+}
+
+.card-back--color3{
+    background-image: linear-gradient(to right, rgba(3, 98, 117, 0.8), rgb(78, 170, 189, 0.8));
+}
+
+.fix-btn-see{
+    text-align: center;
+    padding-top: 3rem;
+}

@@ -1,0 +1,75 @@
+
+.container-section-skill{
+    background-image: linear-gradient(-90deg, rgb(75, 75, 75, 0.5), rgb(136, 136, 136, 0.5)), url(/img/skill.jpg);
+    background-size: cover;
+    height: 110vh;
+    clip-path: ellipse(73% 43% at 50% 50%);
+}
+
+.section-skill{
+    width: 1080px;
+    margin: auto;
+}
+
+.fix-iconGame{
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #A5C736, rgb(200, 241, 64));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fix-iconInternet{
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #37A5E2, rgb(114, 193, 236));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fix-iconWindow{
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #0078D6, rgb(90, 179, 246));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fix-iconDatabase{
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #1C778A, rgb(78, 170, 189));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title-skill{
+    font-size: 1.4rem;
+    color: rgb(63, 62, 62);
+    font-weight: 600;
+    padding: 2rem 0rem;
+}
+
+.detail-skill{
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.section-skill{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr;
+}
+
+.col-effect{
+    background-color: #f6f5f5;
+    width: 90%;
+    margin: auto;
+    margin-top: 12rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 1rem 2rem rgb(98, 98, 98);
+}
+
+.col-effect:hover{
+    transform: translateY(-7px) scale(1.05);
+    transition: all .4s;
+}

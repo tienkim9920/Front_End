@@ -1,0 +1,232 @@
+
+@media screen and (max-width:900px) {
+
+    .container-navbar{
+        display: block;
+    }
+    
+    .nav-checkbox{
+        display: none;
+    }
+    
+    .nav-close{
+        font-size: 2.6rem;
+        cursor: pointer;
+        position: fixed;
+        top: 0.2rem;
+        left: 0;
+        z-index: 9999;
+        background-color: #ffffff;
+        color: #0C713D;
+        padding: 0.5rem 0.7rem;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .nav-open{
+        font-size: 2.6rem;
+        cursor: pointer;
+        position: fixed;
+        top: 0.2rem;
+        left: 0;
+        z-index: 9999;
+        background-color: #ffffff;
+        color: #0C713D;
+        padding: 0.5rem 0.5rem;
+        transition: all 0.5s;
+    }
+    
+    /* ---------------Code Từ Trên Top Nhảy Xuống---------------- */
+    /* .nav-checkbox:checked ~ .lb-icon .icon-front{
+        opacity: 0;
+    }
+    
+    .nav-checkbox:checked ~ .lb-icon .icon-back{
+        opacity: 1;
+        animation-name: moveTop;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    .icon-back{
+        animation-name: moveTop1;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    
+    @keyframes moveTop{
+        0%{
+            transform: translateY(-3rem);
+            opacity: 0;
+        }
+        80%{
+            transform: translateY(-2rem);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes moveTop1{
+        0%{
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+        80%{
+            transform: translateY(-2rem);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(-3rem);
+            opacity: 0;
+        }
+    } */
+    /* ---------------Code Từ Trên Top Nhảy Xuống---------------- */
+    
+    .nav-checkbox:checked ~ .lb-icon .icon-front{
+        transform: rotateY(-180deg);
+    }
+    
+    .nav-checkbox:checked ~ .lb-icon .icon-back{
+        transform: rotateY(0);
+        opacity: 1;
+    }
+    
+    .icon-back{
+        transform: rotateY(180deg);
+    }
+    
+    .nav-background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100rem;
+        z-index: 2000;
+        background-image: linear-gradient(rgba(199, 199, 199, 0.4), rgba(201, 200, 200, 0.4));
+        padding: 1rem;
+        z-index: 1000;
+        opacity: 0;
+        transition: 0.5s;
+        visibility: hidden;
+    }
+    
+    .nav-checkbox:checked ~ .nav-background{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .group-nav{
+        background-color: #ffffff;
+        width: 14rem;
+        height: 26rem;
+        position: fixed;
+        top: 4rem;
+        left: 0%;
+        z-index: 9999;
+    }
+    
+    .nav-list{
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: -7%;
+    }
+    
+    .navi-link{
+        text-decoration: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: gray;
+    }
+
+    .navi-link{
+        z-index: 1;
+        position: relative;
+        padding: 1rem 2.5rem;
+    }
+
+    .navi-link::after{
+        content: '';
+        z-index: -1;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0C713D;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+      
+    .navi-link:hover{
+        cursor: pointer;
+        color: #ffffff;
+    }
+      
+    .navi-link:hover::after{
+        transform-origin: center left;
+        transform: scaleX(1);
+    }
+
+    .nav-item{
+        width: 12rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .group-nav{
+        opacity: 1;
+        visibility: hidden;
+        transform: translateX(-15rem);
+        transition: 0.5s;
+    }
+
+    .nav-checkbox:checked ~ .group-nav{
+        transform: translateX(0rem);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .Group-Navigator{
+        display: none;
+    }
+
+    .header-tab{
+        background-color: #0C713D;
+        display: flex;
+        justify-content: center;
+    }
+
+    .delivery{
+        width: 5rem !important;
+        opacity: 0;
+    }
+
+    .group-AddCart{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .navi-link{
+        font-size: 1rem;
+    }
+
+    .group-nav{
+        width: 13rem;
+        height: 25rem;
+    }
+
+    .delivery{
+        width: 5rem !important;
+        opacity: 0;
+    }
+}

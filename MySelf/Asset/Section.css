@@ -1,0 +1,122 @@
+
+.container-section-about{
+    width: 1080px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem;
+    box-sizing: border-box; 
+}
+
+.about-detail{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title{
+    margin: auto;
+    font-size: 2.5rem;
+    letter-spacing: .8rem;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 3rem;
+
+    background-image: linear-gradient(to right, rgb(78, 77, 77), rgb(131, 131, 131));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title:hover{
+    transform: skewY(5deg) scale(1.1);
+    text-shadow: 1rem 1rem 1rem rgba(129, 127, 127, 0.5);
+    transition: all 0.2s;
+}
+
+.section-about{
+    margin-top: -7rem;
+    color: #555252;
+    font-weight: 600;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.wapper-content{
+    margin-top: -3rem;
+}
+
+.content-detail{
+    font-size: 0.95rem;
+    color: rgb(100, 100, 100);
+}
+
+.content-title{
+    font-size: 1.6rem;
+}
+
+.btn-see,
+.btn-see:link,
+.btn-see:visited
+{
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(65, 82, 192);
+    padding: 0.3rem;
+    border-bottom: 2px solid rgb(65, 82, 192);
+    font-weight: 500;
+}
+
+.btn-see:hover{
+    background-color: rgb(84, 108, 243);
+    color: #ffffff;
+    transform: translateY(-3px);
+    transition: all .3s;
+    box-shadow: 0 0.3rem 0.5rem rgb(110, 110, 110);
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "col-content col-img";
+}
+
+.wapper-img{
+    position: relative;
+}
+
+.about-img{
+    width: 45%;
+    box-shadow: 0 1rem 1rem rgb(110, 110, 110);
+    transition: all .3s;
+}
+
+.remove-img1{
+    position: absolute;
+    left: 55%;
+    top: 4rem;
+    z-index: 10;
+}
+
+.remove-img2{
+    position: absolute;
+    left: 15%;
+    top: 3rem;
+}
+
+.remove-img3{
+    position: absolute;
+    left: 40%;
+    top: 8rem;
+}
+
+.about-img:hover{
+    z-index: 15;
+    transform: translateY(-10px);
+    outline: 7px solid rgb(236, 20, 20);
+}
+
+.about-img:hover .about-img:not(:hover){
+    transform: scale(0.1)
+}

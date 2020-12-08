@@ -1,0 +1,946 @@
+
+@media screen and (max-width: 400px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    /* Header */
+    .txt-up{
+        font-size: 1.5rem;
+    }
+
+    .txt-down {
+        font-size: 0.5rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2rem;
+        border-radius: 6rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    header {
+        clip-path: ellipse(57% 67% at 50% 18%);
+        height: 95vh;
+    }
+
+    /* Header */
+
+
+    /* Navigation */
+    .nav-icon{
+        font-size: 1.5rem !important;
+        left: 76% !important;
+        padding: 0.7rem;
+    }
+
+    .nav-close{
+        font-size: 2rem !important;
+        left: 76% !important;
+        padding: 0.7rem 1rem;
+    }
+
+    .nav-background{
+        width: 2.9rem;
+        height: 3.3rem;
+        left: 76% !important;
+    }
+
+    .group-nav{
+        top: 30% !important;
+        left: 21.5% !important;
+    }
+    
+    .nav-item{
+        font-size: 1.5rem !important;
+    }
+    /* Navigation */
+
+
+    /* Section */
+    .wapper-content{
+        text-align: center;
+    }
+
+    .container-section-about{
+        width: 280px;
+        height: 130vh;
+    }
+
+    .title{
+        font-size: 1.3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .about-detail{
+        padding-top: 2rem;
+    }
+
+    .content-title{
+        font-size: 1.3rem;
+    }
+
+    .content-detail{
+        font-size: 0.8rem;
+    }
+
+    .about-content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    /* Section */
+
+
+    /* Skill Section */
+    .container-section-skill{
+        width: 340px;
+        height: 330vh;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .section-skill{
+        width: 300px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .col-effect{
+        width: 85%;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 1rem 1rem;
+    }
+    /* Skill Section */
+
+
+    /* Detail */
+    .container-section-detail{
+        width: 300px;
+        height: 290vh;
+    }
+
+    .fix-detail-courses{
+        font-weight: 600;
+    }
+
+    .span-Up{
+        font-size: 1.3rem;
+        margin-top: -1rem;
+    }
+
+    .span-Down{
+        font-size: 1.3rem;
+    }
+
+    .picture-heading{
+        width: 100%;
+        height: 27vh;
+        clip-path: ellipse(67% 77% at 51% 22%);
+    }
+
+    .back-body{
+        margin-top: 1rem;
+        font-size: 5rem;
+    }
+
+    .wrapper-detail{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .card{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    /* Detail */
+
+    
+    /* Testimonial */
+    .wapper-testimonial{
+        width: 335px;
+    }
+
+    .container-section-testimonial{
+        height: 130vh;
+        width: 335px;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .img-avt{
+        width: 162px;
+    }
+
+    .group-content{
+        display: none;
+    }
+
+    .fix-name{
+        left: 20%;
+    }
+
+    .Distance-top {
+        height: 15vh;
+    }
+
+    .group-all{
+        padding: 1rem 3rem; 
+        width: 75%;
+    }
+
+    .fix-detail{
+        font-weight: 600;
+        margin-top: -4.5rem;
+        padding-bottom: 1rem;
+    }
+    /* Testimonial */
+
+
+    /* Submit */
+    .fix-deltail-submit{
+        font-weight: 600;
+    }
+
+    .container-submit{
+        width: 335px;
+        height: 130vh !important;
+    }
+
+    .wrapper-submit{
+        background-image: linear-gradient(rgb(255, 255, 255, .6), rgba(209, 207, 207, 0.6)), url(/img/submit.jpg) !important;
+        width: 90% !important;
+        height: 80vh !important;
+        border-radius: 3rem;
+        padding-left: -1rem !important; 
+    }
+
+    .txt-submit{
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 0.7rem 1.2rem;
+        width: 80% !important;
+    }
+    /* Submit */
+
+
+    /* Modals */
+    .modal-content{
+        grid-template-columns: 1fr;
+        height: 73vh; 
+    }
+
+    .modal{
+        text-align: center;
+    }
+
+    .content-left{
+        display: none;
+    }
+
+    .right-body{
+        font-size: 0.9rem;
+    }
+
+    .content-right{
+        padding: 0rem 1rem;
+    }
+
+    .right-heading{
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .modal-close{
+        top: 0.2rem;
+        left: 83%;
+    }
+    /* Modals */
+
+    /* Footers */
+    .container-footer{
+        height: 35vh !important;
+    }
+
+    .wapper-footer{
+        width: 340px !important;
+    }
+
+    .footer-right{
+        display: none;
+    }
+
+    .txt-footer{
+        transform: translateY(1.5rem);
+        letter-spacing: .1rem;
+        font-size: 1rem !important;
+        position: absolute;
+        top: 9rem !important;
+        left: 10% !important;
+    }
+
+    .footer-left{
+        display: none;
+    }
+
+    .logo-footer-mid{
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+        width: 70% !important;
+    }
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+
+@media screen and (max-width: 530px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header */
+    .txt-up{
+        font-size: 1.8rem;
+    }
+
+    .txt-down {
+        font-size: .6rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2rem;
+        border-radius: 6rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    header {
+        clip-path: ellipse(57% 67% at 50% 18%);
+        width: 445px;
+        height: 95vh;
+    }
+
+    /* Header */
+
+
+    /* Navigation */
+    .nav-icon{
+        font-size: 1.5rem !important;
+        left: 76% !important;
+        padding: 0.7rem;
+    }
+
+    .nav-close{
+        font-size: 2rem !important;
+        left: 76% !important;
+        padding: 0.7rem 1rem;
+    }
+
+    .nav-background{
+        width: 2.9rem;
+        height: 3.3rem;
+        left: 76% !important;
+    }
+
+    .group-nav{
+        top: 30% !important;
+        left: 28% !important;
+    }
+    
+    .nav-item{
+        font-size: 1.5rem !important;
+    }
+    /* Navigation */
+
+
+    /* Section */
+    .wapper-content{
+        text-align: center;
+    }
+
+    .container-section-about{
+        width: 390px;
+        height: 100vh;
+    }
+
+    .title{
+        font-size: 1.3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .about-detail{
+        padding-top: 2rem;
+    }
+
+    .content-title{
+        font-size: 1.3rem;
+    }
+
+    .content-detail{
+        font-size: 0.8rem;
+    }
+
+    .about-content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    /* Section */
+
+
+    /* Skill Section */
+    .container-section-skill{
+        width: 445px;
+        height: 260vh;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .section-skill{
+        width: 350px;
+        height: 230vh;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .col-effect{
+        width: 85%;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 1rem 1rem;
+    }
+    /* Skill Section */
+
+
+    /* Detail */
+    .container-section-detail{
+        width: 390px;
+        height: 240vh;
+    }
+
+    .fix-detail-courses{
+        font-weight: 600;
+    }
+
+    .span-Up{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .card-heading{
+        right: 2.5rem;
+    }
+
+    .span-Down{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .picture-heading{
+        width: 100%;
+        height: 24vh;
+        clip-path: ellipse(67% 77% at 51% 22%);
+    }
+
+    .back-body{
+        margin-top: 1rem;
+        font-size: 5rem;
+    }
+
+    .wrapper-detail{
+        display: grid;
+        grid-template-columns: auto;
+        height: 180vh;
+    }
+    
+    .card{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    /* Detail */
+
+    
+    /* Testimonial */
+    .wapper-testimonial{
+        width: 440px;
+    }
+
+    .container-section-testimonial{
+        height: 120vh;
+        width: 440px;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .img-avt{
+        width: 162px;
+    }
+
+    .group-content{
+        display: none;
+    }
+
+    .fix-name{
+        left: 20%;
+    }
+
+    .Distance-top {
+        height: 15vh;
+    }
+
+    .group-all{
+        padding: 1rem 3rem; 
+        width: 57%;
+    }
+
+    .fix-detail{
+        font-weight: 600;
+        margin-top: -4.5rem;
+        padding-bottom: 1rem;
+    }
+    /* Testimonial */
+
+
+    /* Submit */
+    .fix-deltail-submit{
+        font-weight: 600;
+    }
+
+    .container-submit{
+        width: 440px;
+        height: 130vh !important;
+    }
+
+    .wrapper-submit{
+        background-image: linear-gradient(rgb(255, 255, 255, .6), rgba(209, 207, 207, 0.6)), url(/img/submit.jpg) !important;
+        width: 90% !important;
+        height: 80vh !important;
+        border-radius: 3rem;
+        padding-left: -1rem !important; 
+    }
+
+    .txt-submit{
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 0.7rem 1.2rem;
+        width: 80% !important;
+    }
+
+    .detail-submit .title{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .form-group{
+        margin-top: 0.7rem;
+    }
+    /* Submit */
+
+
+    /* Modals */
+    .modal-content{
+        grid-template-columns: 1fr;
+        height: 59vh; 
+    }
+
+    .modal{
+        text-align: center;
+    }
+
+    .content-left{
+        display: none;
+    }
+
+    .right-body{
+        font-size: 0.9rem;
+    }
+
+    .content-right{
+        padding: 0rem 1rem;
+    }
+
+    .right-heading{
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .modal-close{
+        top: 0.2rem;
+        left: 83%;
+    }
+    /* Modals */
+
+    /* Footers */
+    .container-footer{
+        height: 35vh !important;
+    }
+
+    .wapper-footer{
+        width: 448px !important;
+    }
+
+    .footer-right{
+        display: none;
+    }
+
+    .txt-footer{
+        transform: translateY(1.5rem);
+        letter-spacing: .1rem;
+        font-size: 1.2rem !important;
+        position: absolute;
+        top: 11rem !important;
+        left: 15% !important;
+    }
+
+    .footer-left{
+        display: none;
+    }
+
+    .logo-footer-mid{
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+        width: 70% !important;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 450px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header */
+    .txt-up{
+        font-size: 1.8rem;
+        animation: none;
+    }
+
+    .txt-down {
+        font-size: .6rem;
+        animation: none;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2rem;
+        border-radius: 6rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    header {
+        clip-path: ellipse(57% 67% at 50% 18%);
+        width: 413px;
+        height: 85vh;
+    }
+
+    /* Header */
+
+
+    /* Navigation */
+    .nav-icon{
+        font-size: 1.5rem !important;
+        left: 70% !important;
+        padding: 0.7rem;
+    }
+
+    .nav-close{
+        font-size: 2rem !important;
+        left: 70% !important;
+        padding: 0.7rem 1rem;
+    }
+
+    .nav-background{
+        width: 2.9rem;
+        height: 3.3rem;
+        left: 70% !important;
+    }
+
+    .group-nav{
+        top: 23% !important;
+        left: 20% !important;
+    }
+    
+    .nav-item{
+        font-size: 1.5rem !important;
+    }
+    /* Navigation */
+
+
+    /* Section */
+    .wapper-content{
+        text-align: center;
+    }
+
+    .section-about{
+        width: 350px;
+        margin: auto;
+    }
+
+    .container-section-about{
+        width: 413px;
+        height: 110vh;
+    }
+
+    .title{
+        font-size: 1.3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .section-about .about-detail{
+        margin-right: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+    .content-title{
+        font-size: 1.2rem;
+    }
+
+    .content-detail{
+        font-size: 0.8rem;
+    }
+
+    .col-img{
+        display: none;
+    }
+
+    .about-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* Section */
+
+
+    /* Skill Section */
+    .container-section-skill{
+        width: 413px;
+        height: 275vh;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .section-skill{
+        width: 320px;
+        height: 230vh;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .col-effect{
+        width: 85%;
+        margin: auto;
+        margin-top: 5rem;
+        padding: 1rem 1rem;
+    }
+    /* Skill Section */
+
+
+    /* Detail */
+    .container-section-detail{
+        width: 413px;
+        height: 240vh;
+        margin: auto !important;
+    }
+
+    .fix-detail-courses{
+        font-weight: 600;
+    }
+
+    .span-Up{
+        font-size: 1.3rem;
+        margin-top: -0.2rem;
+    }
+
+    .card-heading{
+        right: 2.5rem;
+    }
+
+    .span-Down{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .card{
+        width: 75%;
+    }
+
+    .picture-heading{
+        width: 100%;
+        height: 24vh;
+        clip-path: ellipse(67% 77% at 51% 22%);
+    }
+
+    .back-body{
+        margin-top: 1rem;
+        font-size: 5rem;
+    }
+
+    .wrapper-detail{
+        display: grid;
+        grid-template-columns: auto;
+        height: 200vh;
+    }
+    
+    .card{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    /* Detail */
+
+    
+    /* Testimonial */
+    .wapper-testimonial{
+        width: 413px;
+    }
+
+    .container-section-testimonial{
+        height: 100vh;
+        width: 413px;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    .img-avt{
+        width: 162px;
+    }
+
+    .group-content{
+        display: none;
+    }
+
+    .fix-name{
+        left: 20%;
+    }
+
+    .Distance-top {
+        height: 15vh;
+    }
+
+    .group-all{
+        padding: 1rem 3rem; 
+        width: 62%;
+    }
+
+    .fix-detail{
+        font-weight: 600;
+        margin-top: -4.5rem;
+        padding-bottom: 1rem;
+    }
+    /* Testimonial */
+
+
+    /* Submit */
+    .fix-deltail-submit{
+        font-weight: 600;
+    }
+
+    .container-submit{
+        width: 413px;
+        height: 125vh !important;
+    }
+
+    .wrapper-submit{
+        background-image: linear-gradient(rgb(255, 255, 255, .6), rgba(209, 207, 207, 0.6)), url(/img/submit.jpg) !important;
+        width: 90% !important;
+        height: 80vh !important;
+        border-radius: 3rem;
+        padding-left: -1rem !important; 
+    }
+
+    .txt-submit{
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 0.7rem 1.2rem;
+        width: 80% !important;
+    }
+
+    .detail-submit .title{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .form-group{
+        margin-top: 0.7rem;
+    }
+    /* Submit */
+
+
+    /* Modals */
+    .modal-content{
+        grid-template-columns: 1fr;
+        height: 59vh; 
+    }
+
+    .modal{
+        text-align: center;
+    }
+
+    .content-left{
+        display: none;
+    }
+
+    .right-body{
+        font-size: 0.9rem;
+    }
+
+    .content-right{
+        padding: 0rem 1rem;
+    }
+
+    .right-heading{
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .modal-close{
+        top: 0.2rem;
+        left: 83%;
+    }
+    /* Modals */
+
+    /* Footers */
+    .container-footer{
+        height: 35vh !important;
+        width: 413px;
+    }
+
+    .wapper-footer{
+        width: 448px !important;
+    }
+
+    .footer-right{
+        display: none;
+    }
+
+    .txt-footer{
+        transform: translateY(1.5rem);
+        letter-spacing: .1rem;
+        font-size: 1.2rem !important;
+        position: absolute;
+        top: 11rem !important;
+        left: 15% !important;
+    }
+
+    .footer-left{
+        display: none;
+    }
+
+    .logo-footer-mid{
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+        width: 70% !important;
+    }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tuyển dụng</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./Asset/TuyenDung.css">
+    <link rel="stylesheet" href="./Asset/Navigation_Footer.css">
+    <link rel="stylesheet" href="./Asset/NavBar.css">
+
+</head>
+
+<body onscroll="myFunction()">
+
+    <div class="Container">
+        <div class="Wrapper">
+            <div class="header">
+                <div class="header-tab">
+                    <img style="width: 150px; height: 65px;" class="delivery" src="./img/Logo1.png" alt="">
+                    <img class="img-Logo position" style="width: 100px; height: 65px;" src="./img/Logo2.jpg" alt="">
+                    <img class="img-LogoMid position" style="width: 100px; height: 65px;" src="./img/Logo3.png" alt="">
+                    <img class="img-LogoBottom position" style="width: 100px; height: 65px;" src="./img/Logo4.png"
+                        alt="">
+                    <div class="group-AddCart">
+                        <a class="btn-Login" href="Login.html">Đăng Nhập</a>
+                        <p class="space_Login-Cart">|</p>
+                        <div class="group-AddCartHover">
+                            <div class="AddCart">Giỏ Hàng: <i class='fas fa-cart-arrow-down'
+                                    style='font-size:15px'></i><sup id="countStore"></sup>
+                                <ul class="sub-Cart">
+                                    <li class="Detail">
+                                        <a>Giỏ Hàng Của Bạn</a>
+                                        <a href="#">Xem Chi Tiết</a>
+                                    </li>
+                                    <li class="TotalMoney" style="font-weight: bold; ">Tổng Tiền: <span
+                                            style="font-size: 2rem; color: rgb(255, 65, 65);">0đ</span></li>
+                                    <li class="buyProduct"><a href="#">Thanh Toán</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Group-Navigator" id="GroupNavigator">
+                    <ul class="Navigation" id="Navigation">
+                        <li class="Navigation-Option"><a href="index.html" id="trangChu" class="items">Trang Chủ</a>
+                        </li>
+                        <li class="Navigation-Option">
+                            <a href="HatCoffee.html" id="hatCoffee" class="items">Cà Phê</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="HatCoffeeDamVi.html" class="sub-items">Hành
+                                        Trình Tách Cà Phê
+                                        Đậm Vị</a></li>
+                                <li class="sub-Navigation-Option"><a href="HatCoffee.html" class="sub-items">Hạt Cà Phê
+                                        Phúc Long</a>
+                                </li>
+                                <li class="sub-Navigation-Option"><a href="HatCoffeePhaChe.html" class="sub-items">Nghệ
+                                        Thuật Pha Chế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option">
+                            <a href="" class="items">Trà</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Hành Trình Tách Cà Phê
+                                        Đậm Vị</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Lá Trà Phúc Long</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Nghệ Thuật Pha Chế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option">
+                            <a href="ThucUong.html" class="items">Thứ Uống</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Thức Uống</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Bánh Tráng Miệng</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Đồ Ăn Mặn</a></li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option"><a href="SanPham.html" class="items">Sản Phẩm</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="Tra.html" class="sub-items">Trà</a></li>
+                                <li class="sub-Navigation-Option"><a href="CaPhe.html" class="sub-items">Cà Phê</a></li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option"><a href="KhuyenMai.html" id="khuyenMai" class="items">Khuyến
+                                Mãi</a></li>
+                        <li class="Navigation-Option"><a href="VeChungToi.html" class="items">Về Chung Tôi</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="TuyenDung.html" class="sub-items">Tuyển
+                                        Dụng</a></li>
+                                <li class="sub-Navigation-Option"><a href="ThuVien.html" class="sub-items">Thư Viện</a>
+                                </li>
+                                <li class="sub-Navigation-Option"><a href="LienHe.html" class="sub-items">Liên Hệ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="body">
+                <header>
+                    <a href="#"><img src="https://phuclong.com.vn/uploads/banner/cd3215c2076ec1-banner.jpg"
+                            class="banner" alt="" width="100%"></a>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </header>
+
+                <section class="about-promotion">
+                    <div class="wrapper">
+                        <select name="TuyenDung" id="TuyenDung">
+                            <option value="tuyenDung" selected>Bộ phận tuyển dụng</option>
+                            <option value="cuaHang">Cửa hàng</option>
+                            <option value="nhaMay">Nhà máy</option>
+                            <option value="vanPhong">Văn phòng</option>
+                        </select>
+                        <div class="grid-container">
+                            <div id="grid-content" class="nhanvien">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/CH1.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Tuyển thường xuyên</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 1338</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN THU NGÂN - CASHIER (toàn quốc)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+
+                            <div id="grid-content" class="nhanvien">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/CH2.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Tuyển thường xuyên</span>
+                                        <span><i class="fa fa-eye"></i> 4029</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN PHA CHẾ - BARISTA (toàn quốc)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="nhanvien">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/CH3.jpg" alt="" height="225px">
+                                    <div class="list_meta">
+                                        <span>Tuyển thường xuyên</span>
+                                        <span><i class="fa fa-eye"></i> 5029</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN PHỤC VỤ</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+
+                            </div>
+
+                            <div id="grid-content" class="nhanvien">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/CH4.jpg" alt="" height="225px">
+                                    <div class="list_meta">
+                                        <span>Tuyển thường xuyên</span>
+                                        <span><i class="fa fa-eye"></i> 4029</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN SHIPPER</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="nhanvien">
+                                <a href="#">
+                                    <img src="https://phuclong.com.vn/uploads/post/fa2f2f3b7b281f-banmotacongviecvamucluongnhanvienbaotridien39.png"
+                                        alt="">
+                                    <div class="list_meta">
+                                        <span>Tuyển thường xuyên</span>
+                                        <span><i class="fa fa-eye"></i> 9</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN BẢO TRÌ ĐIỆN LẠNH</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+
+
+                            <div id="grid-content" class="NhaMay">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/NM1.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Đang tuyển</span>
+                                        <span><i class="fa fa-eye"></i> 642</span>
+                                    </div>
+                                    <div class="list_title">02 KỸ SƯ CƠ ĐIỆN - NHÀ MÁY MỸ PHƯỚC 2</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="NhaMay">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/NM2.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Đang tuyển</span>
+                                        <span><i class="fa fa-eye"></i> 1805</span>
+                                    </div>
+                                    <div class="list_title">TRƯỞNG PHÒNG QA/QC NHÀ MÁY</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+
+                            <div id="grid-content" class="NhaMay">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/NM4.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Đang tuyển</span>
+                                        <span><i class="fa fa-eye"></i> 4118</span>
+                                    </div>
+                                    <div class="list_title">KẾ TOÁN KHO NHÀ MÁY MỸ PHƯỚC (Làm việc Bình Dương)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP1.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 258</span>
+                                    </div>
+                                    <div class="list_title">CHUYÊN VIÊN ĐÀO TẠO</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP2.jpeg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 15/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 259</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN SALES THỊ TRƯỜNG</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP3.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 373</span>
+                                    </div>
+                                    <div class="list_title">CHUYÊN VIÊN QA/QC (Làm việc quận Tân Phú)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP4.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 15/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 284</span>
+                                    </div>
+                                    <div class="list_title">TỔNG QUẢN LÝ BẾP TRUNG TÂM</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP5.png" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 30/05/2020</span>
+                                        <span><i class="fa fa-eye"></i> 540</span>
+                                    </div>
+                                    <div class="list_title">NHÂN VIÊN KẾ TOÁN KHO</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP6.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/05/2020</span>
+                                        <span><i class="fa fa-eye"></i> 1196</span>
+                                    </div>
+                                    <div class="list_title">CHUYÊN VIÊN DIGITAL MARKETING</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP7.png" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 595</span>
+                                    </div>
+                                    <div class="list_title">THƯ KÝ BẾP TRUNG TÂM</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP8.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/05/2020</span>
+                                        <span><i class="fa fa-eye"></i> 690</span>
+                                    </div>
+                                    <div class="list_title">TRƯỞNG BỘ PHẬN THIẾT KẾ</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP9.png" alt="">
+                                    <div class="list_meta">
+                                        <span>Hạn nộp hồ sơ: 20/06/2020</span>
+                                        <span><i class="fa fa-eye"></i> 1150</span>
+                                    </div>
+                                    <div class="list_title">TRƯỞNG BỘ PHẬN CSKH</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP10.png" alt="">
+                                    <div class="list_meta">
+                                        <span>Đang tuyển</span>
+                                        <span><i class="fa fa-eye"></i> 350</span>
+                                    </div>
+                                    <div class="list_title">BẾP PHÓ BẾP BÁNH (Làm việc quận 8)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP11.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>Đang tuyển</span>
+                                        <span><i class="fa fa-eye"></i> 1126</span>
+                                    </div>
+                                    <div class="list_title">TRƯỞNG PHÒNG HCNS - KHỐI CỬA HÀNG (F&amp;B)</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+                            <div id="grid-content" class="vanphong">
+                                <a href="#">
+                                    <img src="./img/TuyenDung/VP12.jpg" alt="">
+                                    <div class="list_meta">
+                                        <span>25/02/2020</span>
+                                        <span><i class="fa fa-eye"></i> 757</span>
+                                    </div>
+                                    <div class="list_title">TÀI XẾ XE TẢI 2.5 TẤN</div>
+                                </a>
+                                <div class="sub-section"><a href="#">XEM THÊM</a></div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="sub-section" id="sub-section-footer"><a href="#">XEM THÊM</a></div>
+                    </div>
+                </section>
+
+                <div class="footer">
+                </div>
+
+                <!----------------Hot Line------------------------------>
+                <div class="HotLine">
+                </div>
+
+                <!----------------Hot Line------------------------------>
+
+                <!---------------NavBar------------------>
+                <div class="container-navbar">
+                    <input type="checkbox" id="navi-toggle" class="nav-checkbox">
+                    <label for="navi-toggle" class="lb-icon">
+                        <i class="material-icons nav-open icon-front">&#xe5d2;</i>
+                        <i class="fa fa-remove nav-close icon-back"></i>
+                    </label>
+                    <div class="nav-background"></div>
+                    <div class="group-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" id="trangChuNav" class="navi-link">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item"><a href="HatCoffee.html" id="hatCoffeeNav" class="navi-link">Cà Phê</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="navi-link">Trà</a></li>
+                            <li class="nav-item"><a href="ThucUong.html" class="navi-link">Thức Uống</a></li>
+                            <li class="nav-item"><a href="SanPham.html" class="navi-link">Sản Phẩm</a></li>
+                            <li class="nav-item"><a href="KhuyenMai.html" class="navi-link">Khuyến Mãi</a></li>
+                            <li class="nav-item"><a href="VeChungToi.html" class="navi-link">Chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------NavBar------------------>
+            </div>
+        </div>
+    </div>
+    <script src="./JavaScripts/Javascipts.js"></script>
+    <script src="./JavaScripts/active.js"></script>
+    <script src="./JavaScripts/include.js"></script>
+    <script>
+
+        SelectTuyenDung();
+        function SelectTuyenDung() {
+            var x = document.getElementsByClassName("nhanvien");
+            var y = document.getElementsByClassName('NhaMay');
+            var z = document.getElementsByClassName('vanphong');
+            for (let i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (let i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+            for (let i = 0; i < x.length; i++) {
+                if (i < 4) {
+                    x[i].style.display = "block";
+                }
+            }
+            for (let i = 0; i < z.length; i++) {
+                if (i < 8) {
+                    z[i].style.display = "block";
+                }
+            }
+        }
+
+        function seLectCuaHang(a,b,c) {
+            var x = document.getElementsByClassName(a);
+            var y = document.getElementsByClassName(b);
+            var z = document.getElementsByClassName(c);
+            for (let i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (let i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+            for (let i = 0; i < x.length; i++) {
+
+                x[i].style.display = "block";
+            }
+        }
+
+        document.getElementById('TuyenDung').addEventListener('change', () => {
+            var selected = document.getElementById('TuyenDung').value;
+            if (selected === 'tuyenDung') {
+                document.getElementById('sub-section-footer').style.display = "block";
+                SelectTuyenDung();
+            }
+            else if (selected === 'cuaHang') {
+                document.getElementById('sub-section-footer').style.display = "none";
+                seLectCuaHang("nhanvien","NhaMay","vanphong");
+            }
+            else if (selected === 'nhaMay') {
+                document.getElementById('sub-section-footer').style.display = "none";
+                seLectCuaHang("NhaMay","nhanvien","vanphong");
+            }
+            else {
+                document.getElementById('sub-section-footer').style.display = "block";
+                seLectCuaHang("vanphong","nhanvien","NhaMay",);
+            }
+
+
+        });       
+    </script>
+    <script src="./JavaScripts/include.js"></script>
+    <script src="./JavaScripts/Sticky.js"></script>
+
+</body>
+
+</html>

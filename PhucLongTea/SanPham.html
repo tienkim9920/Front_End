@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./Asset/SanPham.css">
+    <link rel="stylesheet" href="./Asset/Navigation_Footer.css">
+    <link rel="stylesheet" href="./Asset/NavBar.css">
+
+    <title>Sản Phẩm</title>
+</head>
+
+<body onscroll="myFunction()">
+    <div class="Container">
+        <div class="Wrapper">
+            <div class="header">
+                <div class="header-tab">
+                    <img style="width: 150px; height: 65px;" src="./img/Logo1.png" alt="">
+                    <img class="img-Logo position" style="width: 100px; height: 65px;" src="./img/Logo2.jpg" alt="">
+                    <img class="img-LogoMid position" style="width: 100px; height: 65px;" src="./img/Logo3.png" alt="">
+                    <img class="img-LogoBottom position" style="width: 100px; height: 65px;" src="./img/Logo4.png"
+                        alt="">
+                    <div class="group-AddCart">
+                        <a class="btn-Login" href="Login.html">Đăng Nhập</a>
+                        <p class="space_Login-Cart">|</p>
+                        <div class="group-AddCartHover">
+                            <div class="AddCart">Giỏ Hàng: <i class='fas fa-cart-arrow-down'
+                                    style='font-size:15px'></i><sup id="countStore"></sup>
+                                <ul class="sub-Cart">
+                                    <li class="Detail">
+                                        <a>Giỏ Hàng Của Bạn</a>
+                                        <a href="#">Xem Chi Tiết</a>
+                                    </li>
+                                    <div id="showSanPham">
+                                        <!-- <li class="show-SanPham">
+                                            <img src="./img/ImgThucUong/Bakery1.png" alt="">
+                                            <div class="showDetail-SanPham">
+                                                <h4>Bakery1</h4>
+                                                <div class="flex-CountSanPham">
+                                                    <p>1</p>
+                                                    <p>x</p>
+                                                    <p>30000đ</p>
+                                                </div>
+                                            </div>
+                                            <a id="XoaSanPham">x</a>
+                                        </li> -->
+                                    </div>
+                                    <li class="TotalMoney" style="font-weight: bold; ">Tổng Tiền: 
+                                        <span id="TotalMoney"
+                                            style="font-size: 1.5rem; color: rgb(255, 65, 65);">
+                                        </span>
+                                    </li>
+                                    <li class="buyProduct"><a href="#">Thanh Toán</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Group-Navigator" id="GroupNavigator">
+                    <ul class="Navigation" id="Navigation">
+                        <li class="Navigation-Option"><a href="index.html" class="items">Trang Chủ</a></li>
+                        <li class="Navigation-Option">
+                            <a href="HatCoffee.html" id="hatCoffee" class="items">Cà Phê</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="HatCoffeeDamVi.html" class="sub-items">Hành Trình Tách Cà Phê
+                                        Đậm Vị</a></li>
+                                <li class="sub-Navigation-Option"><a href="HatCoffee.html" class="sub-items">Hạt Cà Phê Phúc Long</a>
+                                </li>
+                                <li class="sub-Navigation-Option"><a href="HatCoffeePhaChe.html" class="sub-items">Nghệ Thuật Pha Chế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option">
+                            <a href="TraTruyenThong.html" class="items">Trà</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="TraTruyenThong.html" class="sub-items">Hành Trình Tách Cà Phê
+                                        Đậm Vị</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Lá Trà Phúc Long</a></li>
+                                <li class="sub-Navigation-Option"><a href="" class="sub-items">Nghệ Thuật Pha Chế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option">
+                            <a href="" id="thucUong" class="items">Thứ Uống</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="ThucUong.html" class="sub-items">Thức Uống</a></li>
+                                <li class="sub-Navigation-Option"><a href="BanhTrangMieng.html" class="sub-items">Bánh Tráng Miệng</a></li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option"><a href="SanPham.html" class="items">Sản Phẩm</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="Tra.html" class="sub-items">Trà</a></li>
+                                <li class="sub-Navigation-Option"><a href="CaPhe.html" class="sub-items">Cà Phê</a></li>
+                            </ul>
+                        </li>
+                        <li class="Navigation-Option"><a href="KhuyenMai.html" class="items">Khuyến Mãi</a></li>
+                        <li class="Navigation-Option"><a href="VeChungToi.html" class="items">Về Chung Tôi</a>
+                            <ul class="sub-menu">
+                                <li class="sub-Navigation-Option"><a href="TuyenDung.html" class="sub-items">Tuyển Dụng</a></li>
+                                <li class="sub-Navigation-Option"><a href="ThuVien.html" class="sub-items">Thư Viện</a></li>
+                                <li class="sub-Navigation-Option"><a href="LienHe.html" class="sub-items">Liên Hệ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="body">
+                <header>
+                    <a href="#"><img src="https://phuclong.com.vn/uploads/category/ea0148f488f121-ecpremium_1920x576.jpg"
+                            class="banner" alt="" width="100%"></a>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="#">Sản phẩm</a></li>
+                    </ul>
+                </header>
+
+                <section class="about-promotion">
+                    <div class="wrapper">
+                            <div style="text-align: center;">
+                                <div class="title-content">SẢN PHẨM</div>
+                            </div>
+                            <div class="directIcon">
+                                <i class='fas fa-seedling' style='font-size:36px'></i>
+                            </div>
+                            <div style="text-align: center; margin-bottom: 100px;">
+                                <div class="option-title" onclick="PageImg(1)">TRÀ</div>
+                                <div class="option-title" onclick="PageImg(2)">CÀ PHÊ</div>
+                                <div class="option-title" onclick="PageImg(3)">BÁNH TRUNG THU</div>
+                                <div class="option-title" onclick="PageImg(4)">HỘP QUÀ TẾT</div>
+                            </div>
+                            <div class="content">
+                                <div class="content-tra">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/034aa904ece252-trotilcphclong.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>Trà túi lọc</h1>
+                                        <div class="sub-content">Trà túi lọc tiện dụng được sản xuất theo công thức độc đáo, đảm bảo tận dụng hết tính năng của trà; cả về hương lẫn vị. Không phải tốn nhiều thời gian pha chế, chỉ sau vài phút là có ngay tách trà nóng thơm ngon với nhiều mùi hương đa dạng. Trà túi lọc mở ra phong cách thưởng thức trà hiện đại trong cuộc sống không ngừng phát triển và vươn cao.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/a63cefd03f84fe-trlongtitamgicphclong.png" width="250px" height="250px" alt="">
+                                    </div>
+                                    <div class="left">
+                                        <h1>TRÀ TÚI TAM GIÁC</h1>
+                                        <div class="sub-content">Trà túi lọc tam giác (hay còn gọi là Trà túi lọc kim tự tháp) được xem là một bước tiến mới của dòng trà túi lọc khi được sản xuất và đóng gói theo công nghệ tiên tiến bậc nhất, tăng sự thẩm thấu của trà ra bên ngoài và gia tăng hương vị đậm đà, mang lại trải nghiệm trọn vẹn khi thưởng thức.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                        <div class="clear-left"></div>
+                                    </div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/6bc129830acafb-trxanhhpgiyphclong.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>TRÀ HỘP GIẤY</h1>
+                                        <div class="sub-content">Trà hộp giấy có bao bì hiện đại, gọn nhẹ và thuận tiện khi sử dụng. Trong mỗi hộp trà lưu giữ trọn vẹn hương vị đặc trưng của từng loại trà để từ đó pha chế nên những ly trà thơm ngon và đem lại nhiều lợi ích cho sứ khỏe.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/a5ae2d240c5e31-trlonghpovalphclong.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>TRÀ HỘP XÁM</h1>
+                                        <div class="sub-content">Trà hộp xám có thiết kế hình oval sang trọng và tiện lợi, với hương vị đặc trưng của những loại trà hảo hạng, thỏa mãn như cầu tinh tế của khách hàng.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/93dd10cf34c0c9-05_web_sp_traxanhthainguyen.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>TRÀ THÁI NGUYÊN</h1>
+                                        <div class="sub-content">Là một thức uống đặc sản trong nền văn hóa trà của Việt Nam. Thái Nguyên được thiên nhiên ưu ái về vị trí địa lý và khí hậu nhiệt đới rất thích hợp cho việc trồng và phát triển cây trà. <br>
+                                            Trà Thái Nguyên từ xưa đến nay vẫn được gọi với tên gọi “Đệ nhất danh trà” bởi hương vị ngọt hậu lắng đọng vị giác, mang lại sự tươi trẻ và thư thái khi thưởng thức.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/dd0f6c1232fbe8-tpolo018tragoiolong.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>TRÀ GÓI CAO CẤP</h1>
+                                        <div class="sub-content">Trà gói lưu giữ hương vị tươi nguyên nhất của những lá trà hảo hạng, thích hợp để pha chế những ly trà đậm vị, thơm ngon và đem lại nhiều lợi ích cho sức khỏe khi cùng thưởng thức bên gia đình và người thân.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/750d6f11ca7827-tpxan013xanh.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>TRÀ VẠN LÝ HƯƠNG</h1>
+                                        <div class="sub-content">Vị ngọt thanh và hương thơm tự nhiên của Trà Vạn Lý Hương làm gợi nhớ tới những vùng đất xa xôi nơi những chén trà là đầu câu chuyện, là gợi mở tâm linh, là giao thoa văn hóa và kết nối lòng người.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-tra">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/57bfb7fb544ce8-trenphclong.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>TRÀ ĐEN</h1>
+                                        <div class="sub-content">Trà đen là trà xanh khi thu hoạch và được ủ lên men sau khi phơi khô. Phản ứng lên men giúp trà đen có mùi thơm đặc biệt và lá trà có màu sậm, từ đỏ hung đến đen tuyền. Trà đen với hậu vị chát đậm, khi uống chất trà thấm vào cơ thể nhẹ nhàng đánh thức các giác quan, tạo tâm trạng sảng khoái.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-caphe">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/e8a1723ff95da0-cphmokacbphclong.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>CÀ PHÊ HẠT CÓ BƠ</h1>
+                                        <div class="sub-content">Trên hành trình tìm kiếm những hạt cà phê ngon nhất, Phúc Long luôn chú trọng bốn đặc tính từ trái cà phê nhằm tôn trọng nguyên bản cho tách cà phê đậm vị: Hương thơm cà phê, Thể chất - độ đậm đà, Acid - vị chua thanh và Hậu vị - vị cà phê còn đọng lại sau khi thưởng thức.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-caphe">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/51ea83942dc85b-cphroyalkhngbphclong.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>CÀ PHÊ HẠT KHÔNG BƠ</h1>
+                                        <div class="sub-content">Trên hành trình tìm kiếm những hạt cà phê ngon nhất, Phúc Long luôn chú trọng bốn đặc tính từ trái cà phê nhằm tôn trọng nguyên bản cho tách cà phê đậm vị: Hương thơm cà phê, Thể chất - độ đậm đà, Acid - vị chua thanh và Hậu vị - vị cà phê còn đọng lại sau khi thưởng thức.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-banh">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/bfa6c773f180b0-songhao.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>BÁNH TRUNG THU HỘP 2 BÁNH</h1>
+                                        <div class="sub-content">Đêm Trung thu được ngồi thưởng trà, ngắm trăng, trò chuyện cùng bè bạn thì còn gì bằng? "Song Hảo" mang ý nghĩa trao tình cảm đến cho người yêu quý nhất, bộ đôi tuyệt vời nhất. Hộp bánh Song Hảo Trăng Rằm bao gồm 2 vị bánh thơm ngon đặc trưng và hộp trà Lài thơm ngát chính là món quà ý nghĩa, đáng để bạn lựa chọn trao tặng người bạn hoặc người thân thiết nhất dịp Trung Thu.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-banh">
+                                    <div class="content-left">
+                                        <img src="https://phuclong.com.vn/uploads/category/5f6a45e30d2826-mt.png" alt="">
+                                    </div>                
+                                    <div class="right">
+                                        <h1>BÁNH TRUNG THU HỘP 4 BÁNH</h1>
+                                        <div class="sub-content">Theo văn hóa phương Đông, số 4 (tứ) đại diện cho sự vững vàng, mạnh mẽ và ổn định, như bốn mùa trong trời đất, bốn hướng của tự nhiên. ​​ Hộp bánh Tứ Quý Trăng Rằm bao gồm 4 vị bánh thơm ngon đặc trưng và hộp trà Lài thơm ngát chính là món quà ý nghĩa, đáng để bạn lựa chọn trao tặng dịp Trung Thu.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-banh">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/93d74c62aaa866-lucbaohuongthu.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>BÁNH TRUNG THU HỘP 6 BÁNH</h1>
+                                        <div class="sub-content">Theo văn hóa phương Đông, số 6 (Lục) có phát âm gần giống với chữ "Lộc", tức là may mắn. Đây còn là con số tượng trưng cho sự vững mạnh, thể hiện những thuận lợi, tài lộc trong cuộc sống. Hộp bánh Lục Bảo Hương Thu bao gồm 6 vị bánh thơm ngon đặc trưng và hộp trà Ô-Long cao cấp cũng là những gì Phúc Long muốn gửi gắm, tin rằng món quà trao đi cũng chính là lời chúc may mắn, bình yên đến với những người yêu thương dịp Trung Thu này.</div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                <div class="content-qua">
+                                    <div class="content-right">
+                                        <img src="https://phuclong.com.vn/uploads/category/eaa44539edcb2c-tpgiv002hopgiayvuong5loaitra.png" alt="">
+                                    </div>                
+                                    <div class="left">
+                                        <h1>LỄ HỘP</h1>
+                                        <div class="sub-content">Bộ sản phẩm lễ hộp trà của Phúc Long thể hiện sự tinh tế và đẳng cấp trong từng chi tiết. Đây sẽ món quà biếu sang trọng, gửi trọn hương vị tươi ngon của những dòng trà thượng hạng đến với gia đình, bạn bè và đối tác.
+                                        </div>
+                                        <a href="#" class="chitiet">Xem chi tiết</a>
+                                    </div>
+                                    <div class="clear-left"></div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </section>
+            </div>
+
+                <!---------------Footer-------------------->
+                <div class="footer">
+                </div>
+                <!---------------Footer-------------------->
+
+                <!----------------Hot Line------------------------------>
+                <div class="HotLine">
+                </div>
+                <!----------------Hot Line------------------------------>
+
+                <!---------------NavBar------------------>
+                <div class="container-navbar">
+                    <input type="checkbox" id="navi-toggle" class="nav-checkbox">
+                    <label for="navi-toggle" class="lb-icon">
+                        <i class="material-icons nav-open icon-front">&#xe5d2;</i>
+                        <i class="fa fa-remove nav-close icon-back"></i>
+                    </label>
+                    <div class="nav-background"></div>
+                    <div class="group-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" id="trangChuNav" class="navi-link">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item"><a href="HatCoffee.html" id="hatCoffeeNav" class="navi-link">Cà Phê</a>
+                            </li>
+                            <li class="nav-item"><a href="TraTruyenThong.html" class="navi-link">Trà</a></li>
+                            <li class="nav-item"><a href="ThucUong.html" id="thucUongNav" class="navi-link">Thức Uống</a></li>
+                            <li class="nav-item"><a href="SanPham.html" class="navi-link">Sản Phẩm</a></li>
+                            <li class="nav-item"><a href="KhuyenMai.html" class="navi-link">Khuyến Mãi</a></li>
+                            <li class="nav-item"><a href="VeChungToi.html" class="navi-link">Chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------NavBar------------------>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        Sliding(slideIndex);
+        function Sliding(n) {
+            var y = document.getElementsByClassName("option-title");
+            var m = document.getElementsByClassName("content-tra");
+            var z = document.getElementsByClassName("content-caphe");
+            var x = document.getElementsByClassName("content-banh");
+            var a=document.getElementsByClassName("content-qua");
+            for (var i = 0; i < y.length; i++) {
+                y[i].style.color = "#797979";
+                y[i].style.borderTop = "none";
+                y[i].style.borderBottom = "none";
+            }
+            for (var i = 0; i < m.length; i++) {
+                m[i].style.display = "none";
+            }
+            for (var i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (var i = 0; i < a.length; i++) {
+                a[i].style.display = "none";
+            }
+            if (n === 0){
+                for (var i = 0; i < m.length; i++) {
+                        m[i].style.display = "block";
+                    if(i%2!=0){
+                        m[i].style.background="#ebebe0"
+                    }
+                }
+            }
+            if (n === 1){
+                for (var i = 0; i < z.length; i++) {
+                        z[i].style.display = "block";
+                        if(i%2!=0){
+                        z[i].style.background="#ebebe0"
+                    }
+                }
+            }
+            if(n===2){
+                    for (var i = 0; i < x.length; i++) {               
+                        x[i].style.display = "block";
+                        if(i%2!=0){
+                        x[i].style.background="#ebebe0"
+                    }
+                }
+            }
+            if(n===3){
+                    for (var i = 0; i < a.length; i++) {               
+                        a[i].style.display = "block";
+                        if(i%2!=0){
+                        a[i].style.background="#ebebe0"
+                    }
+                }
+            }
+            y[slideIndex].style.color = "green";
+            y[slideIndex].style.borderTop = "1px solid green";
+            y[slideIndex].style.borderBottom = "1px solid green";
+        }
+        function PageImg(n) {
+            Sliding(slideIndex = n - 1);
+        }
+    </script>
+
+    <!-- javasripts -->
+    <script src="./JavaScripts/include.js"></script>
+    <script src="./JavaScripts/Sticky.js"></script>
+    
+</body>
+
+</html>

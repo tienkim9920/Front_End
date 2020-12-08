@@ -1,0 +1,540 @@
+
+
+.img-Banner{
+    width: 100%;
+    height: 38rem;
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 6s;
+}
+
+.img-BannerMid{
+    width: 100%;
+    height: 38rem;
+    animation-name: fade2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 6s;
+}
+
+.img-BannerBottom{
+    width: 100%;
+    height: 38rem;
+    animation-name: fade3;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 6s;
+}
+
+.positionBanner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.body{
+    position: relative;
+}
+
+.group-Banner{
+    padding-bottom: 44rem;
+}
+
+/* ----------------Tra---------------------- */
+
+.container-Content-Tra{
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 6rem;
+}
+
+.Content-Tra{
+    padding: 2.5rem 0;
+    padding-left: 10rem;
+}
+
+.Content-Tra h4{
+    font-size: 1.6rem;
+    color: #0C713D;
+    letter-spacing: .1rem;
+}
+
+.Content-Tra hr{
+    border: none;
+    padding-bottom: 1rem;
+}
+
+.Content-Tra p{
+    font-size: .9rem;
+}
+
+.Content-Tra a{
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    padding: .6rem .8rem;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.Content-Tra a:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+.container-Content-Tra img{
+    width: 30rem;
+    height: 30rem;
+}
+/* --------------------Tra------------------------ */
+
+
+
+/* -------------------Staff-------------------------- */
+
+.Background-Staff{
+    background-image: linear-gradient(to right, rgb(255, 255, 255, 1), rgba(250, 250, 250, .9)), url(/img/backgroundStaff.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-Content-Staff{
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.container-Content-Staff img{
+    width: 20rem;
+    height: 30rem;
+}
+
+.Content-Staff{
+    width: 40rem;
+    padding-top: 6rem;
+}
+
+.Content-Staff h4{
+    font-size: 1.6rem;
+    color: #0C713D;
+    letter-spacing: .1rem;
+    text-align: left;
+    width: 30rem;
+}
+
+.Content-Staff p{
+    font-size: .9rem;
+    text-align: left;
+    width: 30rem;
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+}
+
+.doiNgu{
+    text-decoration: none;
+    color: #0C713D;
+    border: 1px solid #0C713D;
+    padding: .6rem .8rem;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.Content-Staff .doiNgu:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+/* ------------------Staff---------------------------- */
+
+
+
+/* --------------------SysTem-Shop-------------------- */
+
+.system-Shop{
+    background-color: #0C713D;
+}
+
+.form-group-Shop label{
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    outline: none;
+}
+
+.form-group-Shop{
+    padding: 5rem 7rem 3rem 7rem;
+}
+
+
+select option{
+    color: gray;
+}
+
+.list-group{
+    overflow: auto;
+    width: 65rem;
+    height: 20rem;
+}
+
+.group-Items{
+    display: flex;
+    padding: 2rem 1rem;
+}
+
+.form-Control-Shop{
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    padding-right: 7rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 1.7rem 0;
+}
+
+.form-group-ShowShop p{
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.fa-coffee{
+    color: #ffffff;
+    width: 3rem;
+}
+
+.list-group-items{
+    list-style: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    width: 43rem;
+}
+
+.directShop{
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 0 4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.directShop:hover{
+    border: 1px solid red;
+    outline: none;
+}
+
+/* --------------------SysTem-Shop-------------------- */
+
+
+.container-navbar{
+    display: none;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+
+#countStore{
+    background-color: #0C713D;
+    color: #ffffff;
+    padding: .17rem .35rem;
+    border-radius: 50%;
+}
+
+.show-SanPham img{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+#showSanPham{
+    width: 25rem;
+    height: 11rem;
+    overflow: auto;
+}
+
+.show-SanPham{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.show-SanPham a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.show-SanPham a:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+.showDetail-SanPham h4{
+    font-size: 1.1rem;
+    height: .2rem;
+    color: #0C713D;
+}
+
+.showDetail-SanPham p{
+    font-size: 1.1rem;
+}
+
+.flex-CountSanPham{
+    display: flex;
+}
+
+.flex-CountSanPham p{
+    padding-left: .2rem;
+    font-weight: bold;
+    color: gray;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+
+/* --------------------------------------Responsive------------------------------------------ */
+@media screen and (max-width:1140px) {
+    .container-Content-Tra{
+        width: 960px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .container-Content-Tra img{
+        width: 28rem;
+        height: 25rem;
+    }
+
+    .Content-Tra{
+        padding: 0 2rem;
+    }
+
+    .container-Content-Staff{
+        width: 960px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .img-Staff img{
+        padding: 0 1rem;
+        width: 20rem;
+        height: 25rem;
+    }
+    
+    .Content-Staff{
+        width: 30rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .form-group-Shop{
+        padding: 3rem 3rem 3rem 2rem;
+    }
+
+    .list-group{
+        overflow: auto;
+        width: 840px;
+        height: 20rem;
+    }
+    
+    .list-group-items{
+        list-style: none;
+        font-size: 1.2rem;
+        color: #ffffff;
+        letter-spacing: .1rem;
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .positionBanner{
+        height: 25rem;
+    }
+    
+    .group-Banner{
+        padding-bottom: 28rem;
+    }
+
+    .container-Content-Tra{
+        width: 540px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .container-Content-Tra img{
+        width: 28rem;
+        height: 25rem;
+        padding: 0 2rem;
+    }
+
+    .Content-Tra{
+        padding: 0 2rem;
+    }
+
+    .container-Content-Staff{
+        width: 540px;
+        display: grid;
+        grid-template-columns: auto;
+        padding: .5rem 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .img-Staff img{
+        padding: 1rem 6rem;
+        width: 20rem;
+        height: 25rem;
+    }
+    
+    .Content-Staff{
+        width: 30rem;
+        padding-bottom: 4rem;
+    }
+
+    .form-group-Shop{
+        padding: 3rem 3rem 3rem 2rem;
+    }
+
+    .list-group{
+        overflow: auto;
+        width: 470px;
+        height: 20rem;
+        padding: 0 0;
+    }
+    
+    .list-group-items{
+        list-style: none;
+        font-size: 1.2rem;
+        color: #ffffff;
+        letter-spacing: .1rem;
+        width: 15rem;
+    }
+
+   .directShop{
+       padding: .5rem 1rem;
+       height: 1rem;
+   }
+}
+@media screen and (max-width:414px) {
+    .positionBanner{
+        width: 21rem !important;
+        height: 21rem;
+    }
+    
+    .group-Banner{
+        padding-bottom: 25rem;
+    }
+
+    .container-Content-Tra{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .container-Content-Tra img{
+        width: 18rem !important;
+        height: 17rem;
+        padding: 0 0rem;
+        padding-left: 1.1rem;
+    }
+
+    .Content-Tra{
+        padding: 0 0rem;
+    }
+
+    .Content-Tra h4 {
+        width: 20rem;
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+    }
+
+    .Content-Tra p {
+        width: 20rem;
+        font-size: .9rem;
+        padding: 0 .5rem;
+    }
+
+    .container-Content-Staff{
+        width: 414px !important;
+        display: grid;
+        grid-template-columns: auto;
+        padding: .5rem 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .img-Staff img{
+        padding: 1rem 3.5rem;
+        width: 20rem !important;
+        height: 25rem;
+    }
+    
+    .Content-Staff{
+        width: 24rem;
+        padding-left: 0rem;
+    }
+
+    .Content-Staff h4 {
+        width: 20rem;
+        font-size: 1.3rem;
+        padding: 1rem 0rem;
+    }
+
+    .Content-Staff p{
+        width: 20rem !important;
+        font-size: .9rem;
+        padding: 0 .5rem;
+        padding-bottom: 2rem;
+    }
+
+    .form-group-Shop{
+        padding: 3rem 0rem 3rem 0rem !important;
+    }
+
+    .list-group{
+        overflow: auto;
+        width: 390px !important;
+        height: 20rem;
+        padding: 0 0;
+    }
+    
+    .list-group-items{
+        list-style: none;
+        width: 10rem;
+        font-size: 0.9rem !important;
+        color: #ffffff;
+        letter-spacing: .1rem;
+    }
+
+   .directShop{
+       padding: .5rem 1rem;
+       height: 2.5rem !important; 
+       color: #ffffff !important;
+   }
+
+   footer{
+       display: grid;
+       grid-template-columns: auto;
+       padding-right: 1rem;
+   }
+
+   .fa-coffee{
+       font-size: 16px !important;
+       width: 1.5rem;
+        padding-top: .3rem;
+   }
+}

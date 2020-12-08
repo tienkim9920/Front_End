@@ -1,0 +1,392 @@
+
+.group-Banner{
+    background-image: url(/img/ThucUongBanner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.groupHatCoffee{
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+
+.TrangChu-Coffee{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.TrangChu-Coffee a{
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.TrangChu-Coffee a:first-child{
+    color: rgb(163, 163, 163);
+}
+
+.TrangChu-Coffee a:last-child{
+    color: #808080;
+    font-weight: 600;
+}
+
+.TrangChu-Coffee a:hover{
+    color: red;
+}
+
+.MenuCoffee{
+    text-align: center;
+}
+
+.MenuCoffee h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color: rgb(8, 87, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    padding: 0.5rem 0 2rem 0;
+}
+
+
+.directIcon i{
+    color: rgb(119, 119, 119);
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 38%;
+    z-index: 2;
+}
+
+.directIcon{
+    margin: auto;
+    border-bottom: 1.2px solid rgb(163, 163, 163);
+    width: 18rem;
+    position: relative;
+}
+
+.card-img-top{
+    width: 13rem;
+    height: 13rem;
+}
+
+.Wrapper-SanPham{
+    width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 3rem 0;
+}
+
+.Col-SanPham{
+    text-align: center;
+    transition: all 0.8s;
+    padding: 2rem 0;
+}
+
+.Col-SanPham:hover{
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgb(207, 207, 207), -1px 1px 8px rgb(207, 207, 207);
+}
+
+.card-body{
+    height: 8rem;
+}
+
+.card-body div{
+    display: flex;
+    justify-content: center;
+}
+
+.btnDatHang{
+    width: 7rem;
+    height: 1.7rem;
+    color: #0C713D;
+    text-decoration: none;
+    padding-top: .5rem;
+    background-color: #0f944f;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.btnDatHang:hover{
+    background-color: #0C713D;
+}
+
+.groupSearch-Sort{
+    width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+    border: 1px solid rgb(184, 184, 184);
+    position: relative;
+}
+
+.boderPhanChia{
+    border-left: 1px solid rgb(184, 184, 184);
+    height: 4rem;
+    position: absolute;
+    top: 0rem;
+}
+
+.group-Sort{
+    display: flex;
+    height: 2rem;
+    margin: auto;
+}
+
+.group-Search{
+    display: flex;
+    height: 2rem;
+    margin: auto;
+}
+
+select{
+    padding: 0rem .7rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.group-Search input{
+    padding: .7rem .7rem;
+    padding-right: 2rem;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.group-Search div {
+    display: flex;
+    align-items: center;
+    width: 9rem;
+}
+
+.group-Sort div {
+    display: flex;
+    align-items: center;
+    width: 9rem;
+}
+
+h3{
+    padding-left: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+
+h5{
+    font-size: 1.1rem;
+}
+
+.card-body p{
+    font-size: 1.1rem;
+    color: #0C713D;
+    font-weight: bold;
+}
+
+.btn-SearchSanPham{
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.4rem 0.8rem;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-SearchSanPham:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+.Navigation-ThucUong-Bakery{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.Navigation-ThucUong-Bakery li{
+    padding: .5rem 2rem;
+    margin: 0 0.5rem;
+}
+
+.Navigation-ThucUong-Bakery .Nav-Bakery{
+    padding: .5rem 3.4rem;
+}
+
+.Navigation-ThucUong-Bakery .Nav-Bakery{
+    border-top: 1px solid #0C713D;
+    border-bottom: 1px solid #0C713D;
+}
+
+.Navigation-ThucUong-Bakery .Nav-Bakery a{
+    color: #0C713D;
+}
+
+.Navigation-ThucUong-Bakery .Nav-ThucUong:hover{
+    border-top: 1px solid #0C713D;
+    border-bottom: 1px solid #0C713D;
+}
+
+.Navigation-ThucUong-Bakery .Nav-ThucUong:hover a{
+    color: #0C713D;
+}
+
+.Navigation-ThucUong-Bakery li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: gray;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+
+#countStore{
+    background-color: #0C713D;
+    color: #ffffff;
+    padding: .17rem .35rem;
+    border-radius: 50%;
+}
+
+.show-SanPham img{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.show-SanPham{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.show-SanPham a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.show-SanPham a:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+.showDetail-SanPham h4{
+    font-size: 1.1rem;
+    height: .2rem;
+    color: #0C713D;
+}
+
+.showDetail-SanPham p{
+    font-size: 1.1rem;
+}
+
+.flex-CountSanPham{
+    display: flex;
+}
+
+.flex-CountSanPham p{
+    padding-left: .2rem;
+    font-weight: bold;
+    color: gray;
+}
+
+#showSanPham{
+    width: 25rem;
+    height: 11rem;
+    overflow: auto;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+
+
+@media screen and (max-width:514px) {
+
+    .group-Banner {
+        background-size: cover;
+        height: 22rem;
+        width: 100%;
+    }
+
+    .groupHatCoffee {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+
+    .groupSearch-Sort {
+        width: 80%;
+        margin: auto;
+        display: block;
+        padding: 1rem 2rem;
+        border: 1px solid rgb(184, 184, 184);
+    }
+
+    .group-Sort {
+        padding-bottom: 2rem;
+    }
+
+    .boderPhanChia {
+        display: none;
+    }
+
+    .position{
+        display: none;
+    }
+
+    .Wrapper-SanPham{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: auto;
+    }
+
+    .Col-SanPham {
+        padding: 2rem 0;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .group-AddCart{
+        display: flex;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+    }
+
+    .group-AddCart .group-AddCartHover .AddCart > .sub-Cart {
+        display: none;
+        width: 20rem;
+        position: absolute;
+        left: 1rem;
+        top: 3.1em;
+    }
+
+    #showSanPham {
+        width: 20rem;
+    }
+
+    .btn-Login{
+        display: none;
+    }
+
+    .space_Login-Cart{
+        display: none;
+    }
+}

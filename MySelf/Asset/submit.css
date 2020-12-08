@@ -1,0 +1,118 @@
+
+.container-submit{
+    font-size: 2rem;
+    height: 120vh;
+}
+
+.fix-deltail-submit{
+    padding: 2rem 0rem;
+}
+
+.wrapper-submit{
+    width: 70%;
+    background-image: radial-gradient(150% 200% ellipse at -15%, rgb(255, 255, 255, .6) 50%, transparent 50%), url(/img/submit.jpg);
+    background-size: cover;
+    height: 70vh;
+    margin: auto;
+    padding-left: 3rem;
+    box-shadow: 5px 10px 15px #2e2e2e;
+    border-radius: 5rem;
+}
+
+.detail-submit{
+    text-align: left;
+    padding-top: 4rem;
+}
+
+.lb-txt{
+    font-size: 1rem;
+    display: block;
+    transition: all 1s;
+}
+
+.lb-radio{
+    font-size: 1rem;
+}
+
+.form-radio{
+    display: inline-block;
+}
+
+.txt-submit{
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 0.7rem 1.2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, rgba(212, 212, 212, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all .5s;
+}
+
+.txt-submit:focus{
+    box-shadow: 0px 2.5px 5px rgb(117, 116, 116);
+    transform: translateY(-2px);
+}
+
+.txt-submit:placeholder-shown + .lb-txt{
+    opacity: 0;
+    transform: translateY(-4px);
+}
+
+.form-group{
+    padding-bottom: 0.6rem;
+}
+
+.lb-txt{
+    font-style: italic;
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    color: rgb(80, 79, 79);
+}
+
+.form-radio{
+    padding-bottom: 1.5rem;
+    width: 17%;
+    display: inline-block;
+    position: relative;
+}
+
+.radio-btn{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 0.3rem solid gray;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: .4rem;
+    left: 3%;
+}
+
+.radio-btn::after{
+    opacity: 0;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-color: gray;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: .1rem;
+    left: 9%;
+}
+
+.input-radio:checked ~ .lb-radio .radio-btn::after{
+    opacity: 1;
+}
+
+.lb-radio{
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+}
+
+.input-radio{
+    display: none;
+}

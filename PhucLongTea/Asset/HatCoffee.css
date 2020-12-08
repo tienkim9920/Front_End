@@ -1,0 +1,833 @@
+.container-navbar{
+    display: none;
+}
+
+.group-Banner{
+    background-image: url(/img/HatCoffee1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+}
+
+.group-Banner{
+    position: relative;
+}
+
+.group-Banner h4{
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+    position: absolute;
+    top: 35%;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: alternate;
+}
+
+.position1{
+    left: 29%;
+    animation-name: fade;
+    
+}
+
+.position2{
+    left: 36%;
+    animation-name: fade2;
+}
+
+.position3{
+    left: 36%;
+    animation-name: fade3;
+}
+
+.container{
+    width: 1080px;
+    margin: auto;
+}
+
+.MenuCoffee{
+    text-align: center;
+}
+
+.MenuCoffee h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color: rgb(8, 87, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    padding: 0.5rem 0 2rem 0;
+}
+
+
+.directIcon i{
+    color: rgb(119, 119, 119);
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 38%;
+    z-index: 2;
+}
+
+.directIcon{
+    margin: auto;
+    border-bottom: 1.2px solid rgb(163, 163, 163);
+    width: 18rem;
+    position: relative;
+}
+
+.TrangChu-Coffee{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.TrangChu-Coffee a{
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.TrangChu-Coffee a:first-child{
+    color: rgb(163, 163, 163);
+}
+
+.TrangChu-Coffee a:last-child{
+    color: #808080;
+    font-weight: 600;
+}
+
+.TrangChu-Coffee a:hover{
+    color: red;
+}
+
+.Navigation-Coffee {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}
+
+.Navigation-Coffee li{
+    font-size: 1.35rem;
+    padding: .6rem 2rem;
+    cursor: pointer;
+}
+
+.Navigation-Coffee li{ 
+    text-decoration: none;
+    color: #797979;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+}
+
+.Navigation-Coffee li:hover{
+    background-color: rgb(240, 239, 239);
+}
+
+.Navigation-Coffee li:hover{
+    color: #0C713D;
+}
+
+.group-Modal{
+    padding: 1rem 0;
+    width: 80%;
+    margin: auto;
+}
+
+.modal p{
+    font-weight: 500;
+    letter-spacing: .1rem;
+    padding: 2rem 0;
+    font-family: 'Lora', serif;
+    font-size: .96rem;
+}
+
+.imgCoffee{
+    width: 33rem;
+    height: 20rem;
+}
+
+.Flex-Modal1{
+    display: flex;
+}
+
+.Flex-Modal1:not(:first-child){
+    padding-top: 5rem;
+}
+
+.Flex-Modal1 .p1-Modal1{
+    padding-right: 4rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+}
+
+.Flex-Modal1 .p2-Modal1{
+    padding-left: 4rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+}
+
+.imgModal2{
+    width: 19rem;
+    height: 16rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184), -5px 5px 5px rgb(214, 213, 213), 5px -5px 5px rgb(223, 223, 223);
+    position: absolute;
+    top: 1.9rem;
+    left: 25%;
+}
+
+.detail-Modal .p-Modal{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    width: 500px;
+}
+
+.detail-Modal{
+    padding: 3rem 0;
+}
+
+.detail-Modal a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px solid #0C713D;
+    color: #0C713D;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.detail-Modal a:hover{
+    color: #ffffff;
+    background-color: #0C713D;
+}
+
+.detail-Modal h1{
+    font-size: 1.6rem;
+}
+
+.backImgModal{
+    background-image: url(/img/backgroundImgCoffee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 35rem;
+    height: 20rem;
+    position: relative;
+}
+
+#li1{
+    border-bottom: 1px solid #0C713D; 
+    border-top: 1px solid #0C713D; 
+    color: #0C713D;
+}
+
+
+.modal1{
+    opacity: 1;
+}
+
+.modal2{
+    display: none;
+}
+
+.modal3{
+    display: none;
+}
+
+.modal4{
+    display: none;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------HatCoffeeDamVI----------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+.group-Modal .p-Title{
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    padding: 4rem 4rem;
+}
+
+.group-Icon{
+    display: flex;
+    justify-content: center;
+}
+
+.group-Icon .icon-Animation{
+    width: 7rem;
+    height: 6rem;
+    padding: 1rem .8rem;
+    padding-bottom: 4rem;
+}
+
+/* -----------------------Opacticy1------------------------- */
+
+@keyframes opacity1{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 1;
+    }
+    16%{
+        opacity: 1;
+    }
+    24%{
+        opacity: 1;
+    }
+    32%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 1;
+    }
+    56%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* -------------------------------Opacity2----------------------------- */
+@keyframes opacity2{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 1;
+    }
+    24%{
+        opacity: 1;
+    }
+    32%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 1;
+    }
+    56%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* -------------------------------Opacity3----------------------------- */
+@keyframes opacity3{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 1;
+    }
+    56%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* -------------------------------Opacity4----------------------------- */
+@keyframes opacity4{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 1;
+    }
+    56%{
+        opacity: 1;
+    }
+    64%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* -------------------------------Opacity5----------------------------- */
+@keyframes opacity5{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    56%{
+        opacity: 0;
+    }
+    64%{
+        opacity: 1;
+    }
+    72%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* -------------------------------Opacity6----------------------------- */
+@keyframes opacity6{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    56%{
+        opacity: 0;
+    }
+    64%{
+        opacity: 0;
+    }
+    72%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    88%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* -------------------------------Opacity7----------------------------- */
+@keyframes opacity7{
+    0%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    56%{
+        opacity: 0;
+    }
+    64%{
+        opacity: 0;
+    }
+    72%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    88%{
+        opacity: 0;
+    }
+    94%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animation1{
+    animation-name: opacity1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.animation2{
+    animation-name: opacity2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.animation3{
+    animation-name: opacity3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.animation4{
+    animation-name: opacity4;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.animation5{
+    animation-name: opacity5;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.animation6{
+    animation-name: opacity6;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.animation7{
+    animation-name: opacity7;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.p-ModalDamViLeft{
+    padding-right: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(68, 68, 68);
+}
+
+.p-ModalDamViRight{
+    padding-left: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(68, 68, 68);
+}
+
+.h1-ModalDamViRight{
+    padding-left: 4rem;
+}
+
+.group-PhaChe{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    width: 730px;
+    margin: auto;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.group-PhaChe p{
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-family: initial;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.group-PhaChe img{
+    width: 730px;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+
+#countStore{
+    background-color: #0C713D;
+    color: #ffffff;
+    padding: .17rem .35rem;
+    border-radius: 50%;
+}
+
+.show-SanPham img{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+#showSanPham{
+    width: 25rem;
+    height: 11rem;
+    overflow: auto;
+}
+
+.show-SanPham{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.show-SanPham a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.show-SanPham a:hover{
+    background-color: #0C713D;
+    color: #ffffff;
+}
+
+.showDetail-SanPham h4{
+    font-size: 1.1rem;
+    height: .2rem;
+    color: #0C713D;
+}
+
+.showDetail-SanPham p{
+    font-size: 1.1rem;
+}
+
+.flex-CountSanPham{
+    display: flex;
+}
+
+.flex-CountSanPham p{
+    padding-left: .2rem;
+    font-weight: bold;
+    color: gray;
+}
+
+/* ---------------------------------------Show Sản Phẩm--------------------------------------- */
+/* -----------------------------------------Responsive------------------------------------------ */
+
+@media screen and (max-width:720px) {
+
+    .position{
+        display: none;
+    }
+
+    .Navigation-Coffee{
+        display: grid;
+        grid-template-areas: 
+        "li1 li2"
+        "li3 li4";
+        grid-template-columns: auto auto;
+    }
+
+    .Navigation-Coffee li{
+        font-size: 1.1rem;
+    }
+
+    .Flex-Modal1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .imgCoffee{
+        width: 27rem;
+    }
+}
+
+@media screen and (max-width:514px) {
+
+    .position{
+        display: none;
+    }
+
+    .Navigation-Coffee{
+        display: grid;
+        grid-template-areas: 
+        "li1"
+        "li2"
+        "li3"
+        "li4";
+        grid-template-columns: auto;
+    }
+
+    .Navigation-Coffee li{
+        font-size: 1.1rem;
+    }
+
+    .Flex-Modal1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .imgCoffee{
+        width: 10rem !important;
+    }
+
+    .container{
+        width: 456px;
+        margin: auto;
+    }
+
+    .backImgModal {
+        width: 25rem;
+    }
+
+    .detail-Modal .p-Modal {
+        width: auto;
+    }
+}
+
+

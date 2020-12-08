@@ -1,0 +1,84 @@
+
+.right-body{
+    font-size: 1rem;
+}
+
+.right-heading{
+    font-size: 2.5rem;
+    letter-spacing: .8rem;
+    cursor: pointer;
+    padding-bottom: 3rem;
+
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(110, 110, 110));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.right-heading:hover{
+    transform: skewY(2deg) scale(1.05);
+    text-shadow: 1rem 1rem 1rem rgba(129, 127, 127, 0.5);
+    transition: all 0.2s;
+}
+
+.modal-close{
+    text-decoration: none;
+    color: gray;
+    position: absolute;
+    top: -.8rem;
+    left: 95%;
+    font-size: 4.7rem;
+}
+
+.img-modal{
+    width: 90%;
+    display: block;
+}
+
+.modal{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 41, 41, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    border-radius: 3rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    background-color: #ffffff;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.5);
+}
+
+.fix-btn-link{
+    background-color: rgb(66, 66, 238);
+    color: #ffffff;
+}
+
+.fix-btn-link::after{
+    background-color: rgb(66, 66, 238);
+}
+
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal:target .modal-content{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.4s 0.2s;
+}
